@@ -1,0 +1,48 @@
+# HagaZiekenhuis RAG Chatbot - Core Dependencies
+# ================================================
+# Install with: pip install -r requirements.txt
+
+# ─────────────────────────────────────────────
+# Vector Store & Embeddings
+# ─────────────────────────────────────────────
+chromadb==0.5.6
+sentence-transformers==2.2.2
+openai==1.3.0
+
+# ─────────────────────────────────────────────
+# Web Framework & API
+# ─────────────────────────────────────────────
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+httpx==0.25.1
+
+# ─────────────────────────────────────────────
+# PDF Processing
+# ─────────────────────────────────────────────
+PyMuPDF==1.23.8
+PyMuPDFb==1.23.8
+
+# ─────────────────────────────────────────────
+# Environment & Configuration
+# ─────────────────────────────────────────────
+python-dotenv==1.0.0
+
+# ─────────────────────────────────────────────
+# Utilities & Data Processing
+# ─────────────────────────────────────────────
+numpy==1.26.3
+tqdm==4.67.0
+requests==2.31.0
+
+# ─────────────────────────────────────────────
+# HyDE Support (Query Enhancement)
+# ─────────────────────────────────────────────
+transformers==4.36.0
+torch==2.1.1
+
+# ─────────────────────────────────────────────
+# Optional: Install with `pip install -r requirements.txt` then:
+# pip install -r requirements_tts_extra.txt
+# For TTS/Kokoro support in Dutch
+# ─────────────────────────────────────────────

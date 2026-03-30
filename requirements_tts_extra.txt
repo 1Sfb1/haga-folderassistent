@@ -1,0 +1,15 @@
+# Extra dependencies voor TTS (kokoro-onnx) — GEEN PyTorch nodig!
+# pip install -r requirements_tts_extra.txt
+
+kokoro-onnx>=0.4.0  # Kokoro-82M via ONNX Runtime (geen torch/DLL nodig)
+soundfile>=0.12.1   # WAV-schrijven
+
+# Model-bestanden apart downloaden:
+#   kokoro-v1.0.onnx   (~300MB)  → https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+#   voices-v1.0.bin    (~15MB)   → https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+#
+# Optioneel (kleiner model, ~80MB):
+#   kokoro-v1.0.int8.onnx        → https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.int8.onnx
+#
+# Plaats beide bestanden in de RAG2 root directory (naast server.py)
+# Of stel paden in via env vars: TTS_MODEL_PATH en TTS_VOICES_PATH

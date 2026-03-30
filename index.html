@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAGA FolderAssistent — Pilot Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0B1D32;
+            --navy-mid: #132B47;
+            --navy-light: #1C3A5C;
+            --green: #00B27E;
+            --green-hover: #00C98E;
+            --green-glow: rgba(0, 178, 126, 0.15);
+            --green-bg: #E8FAF4;
+            --white: #FFFFFF;
+            --gray-50: #F6F7F9;
+            --gray-100: #EBEDF1;
+            --gray-200: #D8DCE3;
+            --gray-300: #B8BFC9;
+            --gray-400: #8E97A4;
+            --gray-500: #6B7585;
+            --gray-700: #3B4351;
+            --gray-900: #1A1F27;
+            --radius-lg: 20px;
+            --radius-md: 14px;
+            --radius-sm: 10px;
+            --font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; }
+
+        body {
+            font-family: var(--font);
+            background: var(--gray-50);
+            color: var(--gray-900);
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ══════════ HEADER ══════════ */
+        header {
+            background: var(--navy);
+            padding: 0 24px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 20;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--green), var(--green-hover), var(--green));
+            background-size: 200% 100%;
+            animation: shimmer 3s ease infinite;
+        }
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .logo {
+            width: 36px; height: 36px;
+            background: var(--green);
+            border-radius: var(--radius-sm);
+            display: grid; place-items: center;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(0,178,126,0.3);
+        }
+        .logo svg { width: 20px; height: 20px; }
+
+        .header-title h1 { color: var(--white); font-size: 15px; font-weight: 700; letter-spacing: -0.02em; }
+        .header-title span { color: var(--gray-400); font-size: 11px; font-weight: 500; }
+
+        .header-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+
+        .badge {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--gray-300);
+            font-size: 11px; font-weight: 500;
+            padding: 5px 12px; border-radius: 20px;
+            display: flex; align-items: center; gap: 6px;
+        }
+        .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 6px var(--green); }
+        .badge.pilot { background: rgba(0,178,126,0.12); border-color: rgba(0,178,126,0.2); color: var(--green); }
+
+        /* ══════════ CHAT ══════════ */
+        .chat {
+            flex: 1; overflow-y: auto; padding: 24px 16px;
+            display: flex; flex-direction: column; gap: 24px;
+            scroll-behavior: smooth;
+        }
+        .chat::-webkit-scrollbar { width: 5px; }
+        .chat::-webkit-scrollbar-track { background: transparent; }
+        .chat::-webkit-scrollbar-thumb { background: var(--gray-200); border-radius: 3px; }
+
+        /* ══════════ WELCOME ══════════ */
+        .welcome {
+            max-width: 640px; width: 100%; margin: auto;
+            text-align: center; padding: 32px 16px;
+            animation: fadeUp 0.6s ease-out;
+        }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+        .welcome-icon {
+            width: 72px; height: 72px;
+            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            border-radius: 22px;
+            display: grid; place-items: center;
+            margin: 0 auto 24px;
+            position: relative;
+            box-shadow: 0 8px 32px rgba(11,29,50,0.2);
+        }
+        .welcome-icon::after {
+            content: ''; position: absolute; inset: -3px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, var(--green), transparent 60%);
+            z-index: -1; opacity: 0.5;
+        }
+        .welcome-icon svg { width: 32px; height: 32px; }
+
+        .welcome h2 { font-size: 26px; font-weight: 800; color: var(--navy); letter-spacing: -0.03em; margin-bottom: 10px; }
+        .welcome h2 em { font-style: normal; color: var(--green); }
+        .welcome p { font-size: 14.5px; line-height: 1.65; color: var(--gray-500); max-width: 440px; margin: 0 auto 28px; }
+
+        .suggestions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        .suggestion {
+            background: var(--white); border: 1.5px solid var(--gray-200);
+            padding: 10px 18px; border-radius: 100px;
+            font-size: 13px; font-weight: 500; font-family: var(--font);
+            color: var(--gray-700); cursor: pointer; transition: all 0.2s; white-space: nowrap;
+        }
+        .suggestion:hover {
+            border-color: var(--green); color: var(--green);
+            background: var(--green-bg); transform: translateY(-1px);
+            box-shadow: 0 4px 12px var(--green-glow);
+        }
+
+        /* ══════════ MESSAGES ══════════ */
+        .msg { max-width: 680px; width: 100%; margin: 0 auto; display: flex; gap: 12px; animation: msgSlide 0.35s ease-out; }
+        @keyframes msgSlide { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .msg.user { flex-direction: row-reverse; }
+
+        .avatar {
+            width: 32px; height: 32px; border-radius: var(--radius-sm);
+            flex-shrink: 0; display: grid; place-items: center;
+            font-size: 13px; font-weight: 700; margin-top: 2px;
+        }
+        .msg.bot .avatar { background: var(--green); color: white; }
+        .msg.user .avatar { background: var(--navy); color: white; }
+
+        .msg-content { display: flex; flex-direction: column; gap: 10px; min-width: 0; flex: 1; }
+        .msg.user .msg-content { align-items: flex-end; }
+
+        .bubble { padding: 14px 18px; font-size: 14px; line-height: 1.65; white-space: pre-wrap; word-break: break-word; }
+        .msg.user .bubble { background: var(--navy); color: var(--white); border-radius: var(--radius-md) var(--radius-md) 4px var(--radius-md); }
+        .msg.bot .bubble {
+            background: var(--white); color: var(--gray-900);
+            border: 1px solid var(--gray-100);
+            border-radius: var(--radius-md) var(--radius-md) var(--radius-md) 4px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .bubble b, .bubble strong { font-weight: 600; }
+
+        /* Sources */
+        .sources-wrap { display: flex; flex-direction: column; gap: 6px; }
+        .sources-toggle {
+            display: inline-flex; align-items: center; gap: 5px;
+            background: none; border: none; font-family: var(--font);
+            font-size: 11.5px; font-weight: 600; color: var(--gray-400);
+            cursor: pointer; padding: 4px 0; transition: color 0.15s;
+        }
+        .sources-toggle:hover { color: var(--green); }
+        .sources-toggle svg { width: 14px; height: 14px; transition: transform 0.2s; }
+        .sources-toggle.open svg { transform: rotate(90deg); }
+
+        .sources-list { display: none; flex-wrap: wrap; gap: 6px; }
+        .sources-list.open { display: flex; }
+
+        .source-chip {
+            display: inline-flex; align-items: center; gap: 5px;
+            background: var(--green-bg); color: #059669;
+            font-size: 11px; font-weight: 600;
+            padding: 5px 10px; border-radius: 6px; cursor: default;
+        }
+        .source-chip svg { width: 11px; height: 11px; flex-shrink: 0; }
+        .source-chip .score { color: var(--gray-400); font-weight: 500; margin-left: 2px; }
+
+        /* Loading */
+        .typing { display: flex; gap: 5px; padding: 6px 0; }
+        .typing span { width: 7px; height: 7px; background: var(--green); border-radius: 50%; animation: typePulse 1.4s ease-in-out infinite; }
+        .typing span:nth-child(2) { animation-delay: 0.15s; }
+        .typing span:nth-child(3) { animation-delay: 0.3s; }
+        @keyframes typePulse { 0%,60%,100% { transform: scale(0.85); opacity: 0.35; } 30% { transform: scale(1.1); opacity: 1; } }
+
+        .error-bubble { background: #FEF2F2; color: #B91C1C; border: 1px solid #FECACA; border-radius: var(--radius-sm); padding: 12px 16px; font-size: 13px; }
+
+        /* ══════════ INPUT ══════════ */
+        .input-area { flex-shrink: 0; background: var(--white); border-top: 1px solid var(--gray-100); padding: 14px 16px 18px; }
+        .input-row { max-width: 680px; margin: 0 auto; display: flex; gap: 10px; align-items: flex-end; }
+        .input-wrap { flex: 1; }
+        .input-wrap textarea {
+            width: 100%; padding: 12px 16px;
+            border: 2px solid var(--gray-200); border-radius: var(--radius-md);
+            font-family: var(--font); font-size: 14px; line-height: 1.5;
+            resize: none; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+            min-height: 46px; max-height: 140px;
+            background: var(--gray-50); color: var(--gray-900);
+        }
+        .input-wrap textarea::placeholder { color: var(--gray-400); }
+        .input-wrap textarea:focus { border-color: var(--green); background: var(--white); box-shadow: 0 0 0 3px var(--green-glow); }
+
+        .send-btn {
+            width: 46px; height: 46px; border-radius: var(--radius-md);
+            border: none; background: var(--green); color: white;
+            cursor: pointer; display: grid; place-items: center;
+            transition: all 0.2s; flex-shrink: 0;
+        }
+        .send-btn:hover { background: var(--green-hover); box-shadow: 0 4px 16px var(--green-glow); transform: translateY(-1px); }
+        .send-btn:active { transform: scale(0.96); }
+        .send-btn:disabled { opacity: 0.35; cursor: not-allowed; transform: none; box-shadow: none; }
+        .send-btn svg { width: 18px; height: 18px; }
+
+        .input-hint { max-width: 680px; margin: 8px auto 0; font-size: 11px; color: var(--gray-400); text-align: center; }
+
+        /* ══════════ TTS ══════════ */
+        .tts-bar {
+            display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+            padding: 6px 10px; background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;
+        }
+        .tts-label { font-size: 10px; color: var(--gray-400); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; margin-right: 2px; }
+        .tts-lang {
+            padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 600;
+            border: 1.5px solid transparent; background: transparent; color: var(--gray-300);
+            cursor: pointer; font-family: var(--font); transition: all 0.15s;
+        }
+        .tts-lang:hover { color: var(--green); border-color: rgba(0,178,126,0.3); }
+        .tts-lang.active { background: rgba(0,178,126,0.15); color: var(--green); border-color: rgba(0,178,126,0.3); }
+
+        /* Per-bericht knop */
+        .tts-speak-btn {
+            display: inline-flex; align-items: center; gap: 5px;
+            padding: 4px 11px; border-radius: 20px; font-size: 11.5px; font-weight: 600;
+            border: 1.5px solid var(--gray-200); background: white; color: var(--gray-500);
+            cursor: pointer; font-family: var(--font); transition: all 0.15s; margin-top: 4px;
+        }
+        .tts-speak-btn:hover { border-color: var(--green); color: var(--green); background: var(--green-bg); }
+        .tts-speak-btn.loading { opacity: 0.6; cursor: wait; }
+        .tts-speak-btn.playing { background: var(--navy); color: white; border-color: var(--navy); }
+
+        /* Waveform tijdens afspelen */
+        .tts-wave { display: inline-flex; align-items: center; gap: 2px; height: 11px; }
+        .tts-wave span { display: block; width: 2px; background: currentColor; border-radius: 1px; animation: ttsWave 0.8s ease-in-out infinite; }
+        .tts-wave span:nth-child(1){height:3px;animation-delay:0s}
+        .tts-wave span:nth-child(2){height:7px;animation-delay:.1s}
+        .tts-wave span:nth-child(3){height:11px;animation-delay:.2s}
+        .tts-wave span:nth-child(4){height:7px;animation-delay:.3s}
+        .tts-wave span:nth-child(5){height:3px;animation-delay:.4s}
+        @keyframes ttsWave { 0%,100%{transform:scaleY(.4)} 50%{transform:scaleY(1)} }
+
+        .tts-mini-spin {
+            width: 10px; height: 10px; border: 1.5px solid currentColor;
+            border-top-color: transparent; border-radius: 50%;
+            animation: spin 0.7s linear infinite; display: inline-block;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ══════════ TAAL DROPDOWN ══════════ */
+        .lang-bar {
+            max-width: 680px; margin: 0 auto 8px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .lang-bar label {
+            font-size: 11.5px; font-weight: 600; color: var(--gray-400);
+            white-space: nowrap;
+        }
+        .lang-select {
+            flex: 1; max-width: 320px;
+            padding: 6px 28px 6px 10px;
+            border: 1.5px solid var(--gray-200); border-radius: 8px;
+            font-family: var(--font); font-size: 12.5px; font-weight: 500;
+            color: var(--gray-700); background: var(--gray-50);
+            cursor: pointer; outline: none;
+            appearance: none; -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238E97A4' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+            transition: border-color 0.15s;
+        }
+        .lang-select:hover { border-color: var(--green); }
+        .lang-select:focus { border-color: var(--green); box-shadow: 0 0 0 2px var(--green-glow); }
+
+        @media (max-width: 640px) {
+            header { padding: 0 16px; }
+            .chat { padding: 16px 12px; }
+            .welcome h2 { font-size: 21px; }
+            .suggestions { flex-direction: column; align-items: center; }
+            .badge:not(.pilot) { display: none; }
+            .lang-bar { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+            <path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/>
+        </svg>
+    </div>
+    <div class="header-title">
+        <h1>HAGA FolderAssistent</h1>
+        <span>Doorzoek 1800+ patiëntenfolders met AI</span>
+    </div>
+    <div class="header-right">
+        <div class="tts-bar" title="Kies taal voor voorlezen">
+            <span class="tts-label">🔊</span>
+            <button class="tts-lang active" data-lang="nl" onclick="setTtsLang('nl',this)">🇳🇱</button>
+            <button class="tts-lang" data-lang="en" onclick="setTtsLang('en',this)">🇬🇧</button>
+            <button class="tts-lang" data-lang="tr" onclick="setTtsLang('tr',this)">🇹🇷</button>
+            <button class="tts-lang" data-lang="ar" onclick="setTtsLang('ar',this)">🇸🇦</button>
+            <button class="tts-lang" data-lang="fr" onclick="setTtsLang('fr',this)">🇫🇷</button>
+        </div>
+        <span class="badge pilot">PILOT</span>
+        <span class="badge" id="statBadge"><span class="dot"></span>Verbinden...</span>
+    </div>
+</header>
+
+<div class="chat" id="chat">
+    <div class="welcome" id="welcome">
+        <div class="welcome-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+            </svg>
+        </div>
+        <h2>Stel een vraag over <em>uw zorg</em></h2>
+        <p>Ik doorzoek alle patiëntenfolders van het HagaZiekenhuis en geef u een helder antwoord met bronvermelding.</p>
+        <div class="suggestions">
+            <button class="suggestion" onclick="ask(this)">Hoe bereid ik me voor op een operatie?</button>
+            <button class="suggestion" onclick="ask(this)">Wat zijn de bezoektijden?</button>
+            <button class="suggestion" onclick="ask(this)">Wat zijn bijwerkingen van BCG?</button>
+            <button class="suggestion" onclick="ask(this)">Wat is een liesbreuk?</button>
+            <button class="suggestion" onclick="ask(this)">Mag ik autorijden na een ingreep?</button>
+        </div>
+    </div>
+</div>
+
+<div class="input-area">
+    <div class="lang-bar">
+        <label for="langSelect">🌐 Antwoordtaal:</label>
+        <select id="langSelect" class="lang-select">
+            <option value="B1 (Eenvoudig en begrijpelijk Nederlands)">🇳🇱 Nederlands — B1 (eenvoudig)</option>
+            <option value="B2 (Helder en volledig Nederlands)">🇳🇱 Nederlands — B2 (volledig)</option>
+            <option value="C1 (Professioneel Nederlands)">🇳🇱 Nederlands — C1 (professioneel)</option>
+            <option value="English (simple, B1 level)">🇬🇧 English — B1 (simple)</option>
+            <option value="English (clear and complete, B2 level)">🇬🇧 English — B2 (clear)</option>
+            <option value="Türkçe (basit ve anlaşılır, B1 seviyesi)">🇹🇷 Türkçe — B1</option>
+            <option value="العربية (بسيطة وسهلة الفهم، مستوى B1)">🇸🇦 العربية — B1</option>
+            <option value="Français (simple et compréhensible, niveau B1)">🇫🇷 Français — B1</option>
+        </select>
+    </div>
+    <div class="input-row">
+        <div class="input-wrap">
+            <textarea id="input" rows="1" placeholder="Stel een vraag over de patiëntenfolders..." onkeydown="onKey(event)" oninput="resize(this)"></textarea>
+        </div>
+        <button class="send-btn" id="sendBtn" onclick="send()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                <path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>
+            </svg>
+        </button>
+    </div>
+    <div class="input-hint">Antwoorden zijn gebaseerd op officiële HAGA-patiëntenfolders &middot; Raadpleeg altijd uw arts voor persoonlijk advies</div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const chat = $('#chat'), input = $('#input'), sendBtn = $('#sendBtn'), welcome = $('#welcome'), statBadge = $('#statBadge');
+const langSelect = $('#langSelect');
+let history = [], busy = false;
+
+// Sync TTS-taal met antwoordtaal-selectie
+langSelect.addEventListener('change', () => {
+    const val = langSelect.value.toLowerCase();
+    let ttsCode = 'nl';
+    if (val.includes('english')) ttsCode = 'en';
+    else if (val.includes('türkçe')) ttsCode = 'tr';
+    else if (val.includes('العربية')) ttsCode = 'ar';
+    else if (val.includes('français')) ttsCode = 'fr';
+    // Update TTS-knoppen in header
+    const btn = document.querySelector(`.tts-lang[data-lang="${ttsCode}"]`);
+    if (btn) setTtsLang(ttsCode, btn);
+});
+
+(async () => {
+    try {
+        const d = await (await fetch('/api/stats')).json();
+        statBadge.innerHTML = `<span class="dot"></span>${d.total_chunks.toLocaleString('nl-NL')} chunks`;
+    } catch { statBadge.innerHTML = `<span class="dot" style="background:#ef4444;box-shadow:0 0 6px #ef4444"></span>Offline`; }
+})();
+
+function resize(el) { el.style.height = 'auto'; el.style.height = Math.min(el.scrollHeight, 140) + 'px'; }
+function onKey(e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } }
+function ask(btn) { input.value = btn.textContent; send(); }
+
+async function send() {
+    const text = input.value.trim();
+    if (!text || busy) return;
+    busy = true; sendBtn.disabled = true;
+    input.value = ''; input.style.height = 'auto';
+    if (welcome) welcome.style.display = 'none';
+    addMsg('user', text);
+    const loader = addLoader();
+    try {
+        const r = await fetch('/api/chat', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: text, history: history.slice(-6), language: langSelect.value }),
+        });
+        if (!r.ok) throw new Error(`${r.status}`);
+        const data = await r.json();
+        loader.remove();
+        addMsg('bot', data.answer, data.sources);
+        history.push({ role: 'user', content: text }, { role: 'assistant', content: data.answer });
+    } catch (err) { loader.remove(); addError(`Kon geen antwoord ophalen (${err.message})`); }
+    busy = false; sendBtn.disabled = false; input.focus();
+}
+
+function addMsg(role, text, sources) {
+    const el = document.createElement('div');
+    el.className = `msg ${role}`;
+    let html = esc(text).replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\n- /g, '\n• ');
+    let srcHtml = '';
+    if (sources && sources.length) {
+        const chips = sources.map(s =>
+            `<span class="source-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>${esc(s.title||s.filename).replace(/\.pdf$/i,'')}<span class="score">${Math.round(s.relevance*100)}%</span></span>`
+        ).join('');
+        srcHtml = `<div class="sources-wrap"><button class="sources-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>${sources.length} bron${sources.length>1?'nen':''}</button><div class="sources-list">${chips}</div></div>`;
+    }
+    el.innerHTML = `<div class="avatar">${role==='user'?'U':'H'}</div><div class="msg-content"><div class="bubble">${html}</div>${srcHtml}${role==='bot' ? '<button class="tts-speak-btn">🔊 Lees voor</button>' : ''}</div>`;
+    // Koppel TTS click handler veilig (geen inline onclick met tekst-injectie)
+    if (role === 'bot') {
+        const ttsBtn = el.querySelector('.tts-speak-btn');
+        if (ttsBtn) ttsBtn.addEventListener('click', () => speakMsg(ttsBtn, text));
+    }
+    chat.appendChild(el); scroll();
+}
+
+function addLoader() {
+    const el = document.createElement('div'); el.className = 'msg bot';
+    el.innerHTML = `<div class="avatar">H</div><div class="msg-content"><div class="bubble"><div class="typing"><span></span><span></span><span></span></div></div></div>`;
+    chat.appendChild(el); scroll(); return el;
+}
+
+function addError(text) {
+    const el = document.createElement('div'); el.className = 'msg bot';
+    el.innerHTML = `<div class="avatar">H</div><div class="msg-content"><div class="error-bubble">${esc(text)}</div></div>`;
+    chat.appendChild(el); scroll();
+}
+
+function scroll() { requestAnimationFrame(() => chat.scrollTop = chat.scrollHeight); }
+function esc(t) { const d = document.createElement('div'); d.textContent = t; return d.innerHTML; }
+input.focus();
+
+// ── TTS controller ────────────────────────────────────────────────────────
+let ttsLang = 'nl';
+let ttsAudio = null;
+let ttsBtn   = null;
+
+function setTtsLang(lang, el) {
+    ttsLang = lang;
+    document.querySelectorAll('.tts-lang').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+    stopTts();
+}
+
+function stopTts() {
+    if (ttsAudio) { ttsAudio.pause(); ttsAudio = null; }
+    if (ttsBtn)   { resetTtsBtn(ttsBtn); ttsBtn = null; }
+}
+
+function resetTtsBtn(btn) {
+    btn.classList.remove('loading', 'playing');
+    btn.innerHTML = '🔊 Lees voor';
+}
+
+async function speakMsg(btn, text) {
+    if (btn === ttsBtn) { stopTts(); return; }
+    stopTts();
+    ttsBtn = btn;
+    btn.classList.add('loading');
+    btn.innerHTML = '<span class="tts-mini-spin"></span> Laden…';
+    try {
+        const url = `/api/tts?lang=${encodeURIComponent(ttsLang)}&text=${encodeURIComponent(text)}`;
+        const res = await fetch(url);
+        if (!res.ok) {
+            const e = await res.json().catch(() => ({detail: res.statusText}));
+            throw new Error(e.detail || 'Serverfout');
+        }
+        const blob = await res.blob();
+        const audio = new Audio(URL.createObjectURL(blob));
+        ttsAudio = audio;
+        audio.oncanplay = () => {
+            btn.classList.remove('loading');
+            btn.classList.add('playing');
+            btn.innerHTML = '<span class="tts-wave"><span></span><span></span><span></span><span></span><span></span></span> Speelt…';
+        };
+        audio.onended = () => { stopTts(); };
+        audio.onerror = () => { stopTts(); };
+        await audio.play();
+    } catch(err) {
+        resetTtsBtn(btn);
+        ttsBtn = null;
+        console.error('TTS fout:', err);
+    }
+}
+// ── einde TTS ─────────────────────────────────────────────────────────────
+</script>
+</body>
+</html>

@@ -1,0 +1,893 @@
+{
+  "timestamp": "2026-03-27T15:27:18.190421",
+  "server": "http://localhost:8000",
+  "suite": "urologie-1248-1258",
+  "pass_rate": 85.3,
+  "passed": 29,
+  "total": 34,
+  "results": [
+    {
+      "question": "Wat is het telefoonnummer van de polikliniek Urologie in Den Haag?",
+      "answer": "Het telefoonnummer van de polikliniek Urologie in Den Haag is (070) 210 6482. \n\nDit nummer is te vinden in de folder \"Urinestraalmeting, echo en kijkonderzoek blaas (cystoscopie)\".",
+      "sources": [
+        "5607-urinestraalmeting-echo-en-kijkonderzoek-blaas-cystoscopie.pdf",
+        "1260-verwijdering-van-de-blaas.pdf",
+        "1242-plasonderzoek-flowmetrie-den-haag-en-zoetermeer.pdf",
+        "2093-hormoonbehandeling-bij-prostaatkanker-pkc.pdf",
+        "1140-botoxinjecties-in-de-blaaswand.pdf",
+        "1257-blaasoperatie-tur-blaas.pdf",
+        "5005-aanleren-van-zelfkatheterisatie-cic.pdf",
+        "2516-inbrengen-jj-katheter.pdf",
+        "1298-zenuwblokkade-bij-een-zenuwinklemming-in-de-lies-meralgia-paresthetica.pdf",
+        "5617-wegbranden-van-afwijking-in-de-blaas-trans-utherale-coagulatie-tuc.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1255/1257/1258/1249/1251",
+      "test": "correctness",
+      "keywords_found": [
+        "070",
+        "6482"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 6.153469562530518
+    },
+    {
+      "question": "Wat is het telefoonnummer van de Spoedeisende Hulp in Den Haag voor urologie-klachten buiten kantooruren?",
+      "answer": "Het telefoonnummer van de Spoedeisende Hulp in Den Haag voor urologie-klachten buiten kantooruren is: (070) 210 2060. \n\nDit nummer kunt u bellen als u dringende hulp nodig heeft buiten de reguliere kantooruren. \n\nBronnen: \n- Bron 2: Sterilisatie van de man (Den Haag)\n- Bron 3: Verwijdering van de blaas\n- Bron 10: 1576-onderzoek-galwegen-en-de-alvleesklier-ercp\n- Bron 11: 1191-predniso-lo-n",
+      "sources": [
+        "1191-predniso-lo-n.pdf",
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "1260-verwijdering-van-de-blaas.pdf",
+        "5607-urinestraalmeting-echo-en-kijkonderzoek-blaas-cystoscopie.pdf",
+        "1106-fistel-bij-de-anus.pdf",
+        "2040-endo-anaal-echo-onderzoek.pdf",
+        "1405-trigger-finger-knappende-vinger-of-duim.pdf",
+        "2476-dorsal-slit.pdf",
+        "1576-onderzoek-galwegen-en-de-alvleesklier-ercp.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1255/1257/1252",
+      "test": "correctness",
+      "keywords_found": [
+        "070",
+        "2060"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 8.067306518554688
+    },
+    {
+      "question": "Op welke dagen en tijden is de polikliniek Urologie bereikbaar?",
+      "answer": "De polikliniek Urologie is bereikbaar van maandag t/m vrijdag van 08.00 tot 16.30 uur. \n\nBronnen: \n- Bron 1: \"De polikliniek is bereikbaar van maandag t/m vrijdag van 08.00 tot 16.30 uur via telefoonnummer: (079) 3462860.\"\n- Bron 3: \"De polikliniek Urologie is telefonisch bereikbaar op maandag t/m vrijdag van 08.00 tot 16.30.\"",
+      "sources": [
+        "5005-aanleren-van-zelfkatheterisatie-cic.pdf",
+        "2516-inbrengen-jj-katheter.pdf",
+        "5607-urinestraalmeting-echo-en-kijkonderzoek-blaas-cystoscopie.pdf",
+        "5458-verwijdering-van-teelbal-orchidectomie.pdf",
+        "5635-urodynamisch-onderzoek.pdf",
+        "5050-besnijdenis-bij-een-kind-circumcisie-in-hagaziekenhuis-zoetermeer.pdf",
+        "2497-nefrectomie-verwijderen-van-een-deel-van-de-nier.pdf",
+        "2520-zelf-jj-katheter-verwijderen-dubbel-j-stent.pdf",
+        "5138-dotterbehandeling-dialyse-shunt.pdf",
+        "5823-urs-en-steenbehandeling.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1258",
+      "test": "correctness",
+      "keywords_found": [
+        "maandag",
+        "vrijdag",
+        "8.00",
+        "16.30"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 6.395001173019409
+    },
+    {
+      "question": "Hoe lang duurt een niersteenvergruizing (ESWL-behandeling)?",
+      "answer": "De niersteenvergruizing (ESWL-behandeling) duurt in totaal ongeveer een half uur. \n\nNa de behandeling kun je de volgende dingen verwachten:\n- Je kunt pijn krijgen van stukjes steen die zijn losgeraakt.\n- Het is verstandig om bij een pijnaanval minder te drinken.\n- Als er een steen in de urineleider zit, kan er stuwing optreden in de nier.\n\nNeem contact op met de polikliniek Urologie als de pijn onhoudbaar is of als je koorts krijgt (temperatuur van 38,5 of hoger).\n\nBronnen: \n- Niersteenvergruizing (ESWL-behandeling) (Bron 4, 8, 11)",
+      "sources": [
+        "1248-niersteenvergruizing-eswl-behandeling.pdf",
+        "5402-nierstenen.pdf",
+        "5595-spataderen-vnus-behandeling.pdf",
+        "5209-fototherapie-bij-pasgeborenen.pdf",
+        "5386-nefrostomie.pdf",
+        "5698-echocardiogram-via-de-slokdarm-transoesophagiaal-echo-tee.pdf",
+        "5347-mcug-mictie-cysto-urethrogram-blaasonderzoek.pdf",
+        "2496-gemcitabine-blaasspoeling.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1248",
+      "test": "correctness",
+      "keywords_found": [
+        "half uur"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 7.1803178787231445
+    },
+    {
+      "question": "Hoe lang duurt een TUR-blaas operatie?",
+      "answer": "De TUR-blaas operatie duurt ongeveer 30 tot 60 minuten. \n\nNa de operatie kunnen er enkele bijwerkingen optreden, zoals:\n\n- Blaaskrampen\n- Buikpijn\n- Urineverlies\n- Een schrijnend gevoel in de plasbuis\n- Meer aandrang om te plassen\n- Rood gekleurde urine (dit is normaal en kan tot 6 weken duren)\n\nHet is belangrijk om veel te drinken (minimaal 2 liter per dag) om de klachten te verlichten. \n\nAls je na de operatie vragen hebt of als er problemen optreden, neem dan contact op met de Polikliniek Urologie of de Spoedeisende Hulp.\n\nDeze informatie komt uit de folder \"Blaasoperatie - TUR-blaas\".",
+      "sources": [
+        "1257-blaasoperatie-tur-blaas.pdf",
+        "1234-bcg-blaasspoeling.pdf",
+        "1251-stressincontinentie.pdf",
+        "2498-verwijderen-van-de-nier-en-de-urineleider-nefro-ureterectomie.pdf",
+        "1031-bekkenfysiotherapie-na-prostaatverwijdering-radicale-prostatectomie.pdf",
+        "1249-prostaatoperatie-trans-urethrale-resectie-van-de-prostaat-turp.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1257",
+      "test": "correctness",
+      "keywords_found": [
+        "30",
+        "60"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 10.659861087799072
+    },
+    {
+      "question": "Hoe lang duurt de stressincontinentie operatie met de Altis sling?",
+      "answer": "De operatie met de Altis sling duurt ongeveer 20 minuten. \n\nHier zijn enkele belangrijke punten over de operatie:\n\n- Je ligt op een operatietafel.\n- Er wordt een 'time-out-procedure' gedaan om te controleren of alles in orde is.\n- De arts maakt een klein sneetje van ongeveer 1 centimeter in de huid van de schede, ter hoogte van het midden van de plasbuis.\n- Via deze opening plaatst de arts het bandje.\n\nNa de operatie wordt je blaas deels gevuld met fysiologisch zout. Wanneer je wakker bent en moet plassen, kun je zelf naar het toilet. Hierna meet de verpleegkundige of de blaas leeg is. \n\nBronnen: \n- Bron 4: Stressincontinentie\n- Bron 8: Stressincontinentie",
+      "sources": [
+        "1251-stressincontinentie.pdf",
+        "5614-de-trans-obturator-tape-tot-bij-stressincontinentie.pdf",
+        "1092-verwijding-buikslagader-aneurysma-aorta-abdominalis.pdf",
+        "2116-gebruik-van-een-sling-bij-schouder-arm-pols-of-handblessure.pdf",
+        "1121-slijmbeursoperatie.pdf",
+        "5108-ct-of-echogeleide-longbiopsielongpunctie.pdf",
+        "1123-thoracoscopische-ingrepen-via-een-kijkoperatie-in-de-borstholte.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1251",
+      "test": "correctness",
+      "keywords_found": [
+        "20"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 14.886793613433838
+    },
+    {
+      "question": "Hoe lang duurt een vasectomie (sterilisatie van de man)?",
+      "answer": "Een vasectomie (sterilisatie van de man) duurt ongeveer 15 minuten. \n\nHier zijn enkele belangrijke stappen en instructies voor de ingreep:\n\n1. U gaat op de operatietafel liggen.\n2. Een verpleegkundige ontsmet het operatiegebied en dekt het steriel af.\n3. De uroloog maakt een kleine snee in de huid en haalt de zaadleider naar buiten.\n4. Een deel van de zaadleider wordt verwijderd en de uiteinden worden afgebonden of dichtgeschroeid.\n5. De huidsnee wordt gesloten met een oplosbare hechting of sluit vanzelf.\n\nNa de ingreep:\n\n- De verpleegkundige verbindt de wondjes.\n- U mag de pleisters de volgende dag verwijderen.\n- U kunt een schone onderbroek dragen, dit is voldoende.\n- Vermijd sporten of fietsen in de eerste dagen.\n- Vermijd geslachtsgemeenschap gedurende de eerste drie dagen.\n\nVoor meer informatie of vragen kunt u contact opnemen met de polikliniek Urologie van het HagaZiekenhuis.\n\nBronnen: \n- Bron 1: Sterilisatie van de man\n- Bron 2: Sterilisatie van de man (Den Haag)\n- Bron 12: Sterilisatie van de man\n- Bron 14: Sterilisatie van de man (Den Haag)",
+      "sources": [
+        "1250-sterilisatie-van-de-man.pdf",
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "1684-sterilisatie-van-de-vrouw.pdf",
+        "1580-besnijdenis-bij-een-kind-circumcisie-in-den-haag.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1250",
+      "test": "correctness",
+      "keywords_found": [
+        "15"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 9.344767570495605
+    },
+    {
+      "question": "Hoe vaak moet een gewone urinekatheter vervangen worden?",
+      "answer": "Een gewone urinekatheter wordt doorgaans om de 6 tot 8 weken vervangen. Indien u de katheter langer dan deze periode nodig heeft, zal met u een afspraak gemaakt worden, wanneer en door wie de katheter vervangen gaat worden. \n\nDeze informatie komt uit de folder \"Thuis met een katheter\" (Bron 1) en \"Urinekatheter\" (Bron 2).",
+      "sources": [
+        "1252-thuis-met-een-katheter.pdf",
+        "5745-urinekatheter.pdf",
+        "2220-kippenborstcorrectie.pdf",
+        "1254-thuis-met-een-nefrostomiekatheter.pdf",
+        "1255-thuis-met-een-suprapubische-katheter-den-haag.pdf",
+        "1245-inbrengen-suprapubische-katheter.pdf",
+        "1855-mct-dieet.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1252",
+      "test": "correctness",
+      "keywords_found": [
+        "6",
+        "8",
+        "weken"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 6.202656984329224
+    },
+    {
+      "question": "Hoe vaak moet een nefrostomiekatheter vervangen worden?",
+      "answer": "Een nefrostomiekatheter wordt doorgaans om de 4 tot 6 maanden vervangen. Als u de katheter langer dan deze periode nodig heeft, zal er een afspraak gemaakt worden over wanneer en door wie de katheter vervangen gaat worden. \n\nDit komt uit de volgende bron: \"Een nefrostomiekatheter kan lang blijven zitten. Deze katheter wordt doorgaans om de 4 tot 6 maanden vervangen.\" (Bron 2)\n\nAls u nog vragen heeft, kunt u contact opnemen met uw arts of de afdeling van het HagaZiekenhuis.",
+      "sources": [
+        "1254-thuis-met-een-nefrostomiekatheter.pdf",
+        "5386-nefrostomie.pdf",
+        "5636-verzorging-van-nefrostomiekatheter.pdf",
+        "1252-thuis-met-een-katheter.pdf",
+        "1255-thuis-met-een-suprapubische-katheter-den-haag.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1254",
+      "test": "correctness",
+      "keywords_found": [
+        "4",
+        "6",
+        "maanden"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 6.993602275848389
+    },
+    {
+      "question": "Na hoeveel maanden na de vasectomie wordt er een spermaonderzoek gedaan?",
+      "answer": "Na de vasectomie wordt er na 3 maanden een spermaonderzoek gedaan. Dit onderzoek is belangrijk voor het vaststellen van onvruchtbaarheid. \n\nHier zijn enkele instructies en stappen die u moet volgen:\n\n1. Blijf voorbehoedsmiddelen (anticonceptie) gebruiken tot het spermaonderzoek is gedaan.\n2. Na 3 maanden wordt een zaadmonster onderzocht.\n3. U ontvangt schriftelijk bericht over de uitslag van het spermaonderzoek.\n4. Als er nog zaadcellen aanwezig zijn, moet het spermaonderzoek mogelijk worden herhaald.\n\nDit komt uit de folder \"Sterilisatie van de man\".",
+      "sources": [
+        "1250-sterilisatie-van-de-man.pdf",
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "5656-voorlichting-orienterend-fertiliteits-onderzoek-ofo.pdf",
+        "1868-robot-geassisteerde-prostaatverwijdering-pkc.pdf",
+        "5477-kinderwens.pdf",
+        "2449-zaadbalkanker-testiscarcinoom.pdf"
+      ],
+      "category": "feitelijk",
+      "source_hint": "1250",
+      "test": "correctness",
+      "keywords_found": [
+        "3"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 21.79415798187256
+    },
+    {
+      "question": "Hoeveel moet ik per dag drinken als ik een katheter heb thuis?",
+      "answer": "Als u thuis een katheter heeft, is het belangrijk om voldoende te drinken. De folders geven aan dat u minstens 1,5 tot 2 liter per dag moet drinken. Dit helpt om de urine goed door te laten stromen en voorkomt problemen.\n\nHier zijn enkele instructies om in gedachten te houden:\n\n- Zorg ervoor dat de opvangzak lager ligt dan uw blaas.\n- Draag loszittende kleding om de urinestroom niet te onderbreken.\n- Leeg de opvangzak regelmatig, bij voorkeur elke 2 uur.\n- Controleer of de slang tussen de katheter en de opvangzak goed zit en niet knikt.\n\nAls u vragen heeft of als er problemen optreden, neem dan contact op met de Urologie polikliniek.\n\nDeze informatie komt uit de folders \"Thuis met een suprapubische katheter\" en \"1245-inbrengen-suprapubische-katheter\".",
+      "sources": [
+        "1927-dieet-bij-levercirrose.pdf",
+        "1325-thuis-met-een-suprapubische-katheter.pdf",
+        "1245-inbrengen-suprapubische-katheter.pdf",
+        "2292-plasbuisoperatie-urethraplastiek.pdf",
+        "1025-vezelverrijkte-voeding.pdf",
+        "1897-dieet-bij-cf-gerelateerde-diabetes-cfrd.pdf",
+        "2548-dieetadvies-bij-nierstenen.pdf",
+        "2454-blaaskatheter-verwijderen-katheterontwenning-twoc-of-mictietrial.pdf",
+        "1951-darmfalen-dieet.pdf",
+        "1868-robot-geassisteerde-prostaatverwijdering-pkc.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1252/1255/1254",
+      "test": "correctness",
+      "keywords_found": [
+        "1,5",
+        "liter"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 8.438713788986206
+    },
+    {
+      "question": "Hoe vaak per dag moet ik de huid rondom mijn suprapubische katheter schoonmaken?",
+      "answer": "U moet de huid rondom de suprapubische katheter twee keer per dag goed schoonmaken met water. Gebruik geen zeep. \n\nHier zijn de stappen die u kunt volgen:\n\n1. Was uw handen.\n2. Reinig de huid met kraanwater.\n3. Dep de huid droog met een schone handdoek.\n4. Controleer de huid op irritatie of infectieverschijnselen.\n\nDit komt uit de folder \"Thuis met een suprapubische katheter\". \n\nAls de huid rondom de insteekopening rood wordt of als uw kind koorts krijgt, neem dan contact op met het ziekenhuis.",
+      "sources": [
+        "1325-thuis-met-een-suprapubische-katheter.pdf",
+        "1245-inbrengen-suprapubische-katheter.pdf",
+        "1255-thuis-met-een-suprapubische-katheter-den-haag.pdf",
+        "5634-zelfkatheterisatie-leegmaken-van-de-blaas-met-een-katheter.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1255",
+      "test": "correctness",
+      "keywords_found": [
+        "twee keer"
+      ],
+      "keywords_missing": [
+        "2 keer"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.5,
+      "passed": true,
+      "detail": "Ontbrekend: 2 keer",
+      "response_time": 6.294817209243774
+    },
+    {
+      "question": "Mag ik zeep gebruiken bij het schoonmaken van de katheterinsteekopening?",
+      "answer": "Ik kan dit niet betrouwbaar beantwoorden op basis van de beschikbare folders. Neem contact op met uw behandelend arts of de afdeling van het HagaZiekenhuis.",
+      "sources": [
+        "2293-hibiscrub-instructies-voorafgaand-aan-dbs.pdf",
+        "1827-rugoperatie-spondylodeseplif-leefregels-voor-en-na-een-neurochirurgische-spondylodeseplif-operatie.pdf",
+        "2295-hibiscrub-instructies-voorafgaand-aan-rugoperatie.pdf",
+        "5835-cardiochirurgie-behandelen-van-staphylococcus-aureus-ter-voorkoming-van-een-wondinfectie-na-een-operatie.pdf",
+        "1325-thuis-met-een-suprapubische-katheter.pdf",
+        "2382-horen-via-beengeleiding-bcd.pdf",
+        "1245-inbrengen-suprapubische-katheter.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1255/1252/1254",
+      "test": "correctness",
+      "keywords_found": [
+        "niet"
+      ],
+      "keywords_missing": [
+        "geen zeep",
+        "zeep"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.3333333333333333,
+      "passed": false,
+      "detail": "Ontbrekend: geen zeep, zeep",
+      "response_time": 7.289406061172485
+    },
+    {
+      "question": "Moet ik nuchter zijn voor een niersteenvergruizing?",
+      "answer": "Voor een niersteenvergruizing (ESWL-behandeling) hoeft u niet nuchter te zijn. Dit betekent dat u geen speciale regels hoeft te volgen wat betreft eten en drinken voor de behandeling.\n\nHier zijn enkele belangrijke instructies:\n\n- U hoeft niet nuchter te zijn voor de behandeling.\n- U krijgt van uw arts een recept voor een pijnstiller.\n- Neem de pijnstiller in zoals voorgeschreven door uw arts.\n- Neem bij twijfel of onduidelijkheid over bloedverdunners, antibiotica of pijnstillers op tijd contact op met de polikliniek Urologie.\n\nDeze informatie komt uit de folder over de niersteenvergruizing (ESWL-behandeling). \n\nAls u nog vragen heeft, kunt u deze stellen aan uw behandelend arts.",
+      "sources": [
+        "2192-gynaecologische-ingreep-met-sedatie-in-poliklinische-operatiekamer.pdf",
+        "1248-niersteenvergruizing-eswl-behandeling.pdf",
+        "2498-verwijderen-van-de-nier-en-de-urineleider-nefro-ureterectomie.pdf",
+        "1571-opname-voor-een-operatie-jkz.pdf",
+        "1576-onderzoek-galwegen-en-de-alvleesklier-ercp.pdf",
+        "5416-onderzoek-spatader-bij-vrouwelijke-geslachtsorganen-vena-ovarica-en-bekkenvaten.pdf",
+        "1112-liesbreukoperatie.pdf",
+        "1235-besnijdenis-bij-volwassenen-circumcisie.pdf",
+        "1257-blaasoperatie-tur-blaas.pdf",
+        "1229-longoperatie.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1248",
+      "test": "correctness",
+      "keywords_found": [
+        "niet nuchter",
+        "hoeft niet nuchter"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 8.370430707931519
+    },
+    {
+      "question": "Welke pijnstiller moet ik innemen voor een ESWL-behandeling en hoeveel?",
+      "answer": "Voor de ESWL-behandeling (niersteenvergruizing) moet je een pijnstiller innemen. De instructies zijn als volgt:\n\n1. Je krijgt van je arts een recept voor een pijnstiller. Meestal is dit een zetpil diclofenac.\n2. Daarnaast moet je ook paracetamol innemen.\n3. Neem de zetpil en de paracetamol één tot twee uur voor de behandeling in.\n\nAls je vragen hebt over de juiste dosering of andere details, neem dan contact op met je behandelend arts. \n\nDeze informatie komt uit de folder over de Niersteenvergruizing (ESWL-behandeling).",
+      "sources": [
+        "1248-niersteenvergruizing-eswl-behandeling.pdf",
+        "5039-barbotage-behandeling-van-verkalking-in-een-pees.pdf",
+        "1611-nsaids-ontstekingsremmende-pijnstillers.pdf",
+        "5505-pijnmeten-op-de-seh.pdf",
+        "1250-sterilisatie-van-de-man.pdf",
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "5523-poliklinische-operatieve-ingreep.pdf",
+        "5811-carpaal-tunnel-syndroom-cts-neurochirurgie.pdf",
+        "1609-methotrexaat-ledertrexate.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1248",
+      "test": "correctness",
+      "keywords_found": [
+        "diclofenac",
+        "paracetamol"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 13.341858386993408
+    },
+    {
+      "question": "Hoeveel dagen voor een vasectomie moet ik mijn balzak scheren?",
+      "answer": "U moet de haren van uw balzak scheren op de dag vóór de ingreep. \n\nHier zijn enkele instructies en aandachtspunten voor de voorbereiding op de vasectomie:\n\n- Scheren van de balzak moet de dag voor de ingreep gebeuren.\n- U hoeft niet nuchter te zijn; u mag gewoon eten en drinken voor de ingreep.\n- Neem een uur voor de ingreep pijnstillers in, zoals paracetamol, om eventuele pijn na de ingreep te verminderen.\n- Vermeld op het toestemmingsformulier of u bloedverdunnende middelen gebruikt.\n\nNeem contact op met uw behandelend arts voor meer specifieke instructies of vragen over de ingreep. \n\nDeze informatie komt uit de folder \"Sterilisatie van de man\".",
+      "sources": [
+        "1250-sterilisatie-van-de-man.pdf",
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "5186-endovasculaire-lasertechniek-bij-spataderen.pdf",
+        "2504-zwelling-van-de-balzak.pdf",
+        "1868-robot-geassisteerde-prostaatverwijdering-pkc.pdf",
+        "5477-kinderwens.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1250",
+      "test": "correctness",
+      "keywords_found": [],
+      "keywords_missing": [
+        "3"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.0,
+      "passed": false,
+      "detail": "Ontbrekend: 3",
+      "response_time": 13.700134038925171
+    },
+    {
+      "question": "Wat zijn de leefregels voor de eerste 2 weken na een TUR-blaas operatie?",
+      "answer": "Na een TUR-blaas operatie zijn er enkele belangrijke leefregels voor de eerste 2 weken. Deze regels helpen bij het herstel en verminderen de kans op complicaties. Hier zijn de leefregels:\n\n1. **Veel drinken**: Zorg ervoor dat je voldoende drinkt, minimaal 2 liter per dag.\n2. **Geen zware inspanning**: Vermijd zwaar tillen en zware lichamelijke arbeid.\n3. **Niet fietsen**: Fietsen is niet toegestaan in deze periode.\n4. **Geen seksuele gemeenschap**: Vermijd seksuele activiteiten.\n5. **Niet persen**: Probeer te voorkomen dat je perst bij de ontlasting.\n6. **Rust nemen**: Neem voldoende rust en probeer niet te veel te bewegen.\n\nDaarnaast kunnen er bijwerkingen optreden, zoals:\n\n- Blaaskrampen\n- Buikpijn\n- Urineverlies\n- Schrijnend gevoel in de plasbuis\n- Meer aandrang om te plassen\n- Roodkleurige urine (dit is normaal en kan tot 6 weken duren)\n\nNeem contact op met de Polikliniek Urologie of de SEH als je vragen hebt of als er problemen optreden.\n\nDeze informatie komt uit de folder \"Blaasoperatie - TUR-blaas\".",
+      "sources": [
+        "1257-blaasoperatie-tur-blaas.pdf",
+        "1234-bcg-blaasspoeling.pdf",
+        "1868-robot-geassisteerde-prostaatverwijdering-pkc.pdf",
+        "5762-leefregels-en-oefeningen-bij-een-pectus-operatie.pdf",
+        "5056-blaasbiopten.pdf",
+        "1031-bekkenfysiotherapie-na-prostaatverwijdering-radicale-prostatectomie.pdf",
+        "1249-prostaatoperatie-trans-urethrale-resectie-van-de-prostaat-turp.pdf",
+        "1246-mitomycine-blaasspoeling.pdf",
+        "1251-stressincontinentie.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1257",
+      "test": "correctness",
+      "keywords_found": [
+        "seksuele gemeenschap",
+        "fietsen"
+      ],
+      "keywords_missing": [
+        "alcohol"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.6666666666666666,
+      "passed": true,
+      "detail": "Ontbrekend: alcohol",
+      "response_time": 21.767189741134644
+    },
+    {
+      "question": "Hoe lang moet ik minimaal 5 keer per dag plassen na de Altis stressincontinentie operatie?",
+      "answer": "De folder bevat informatie over dit medicijn, maar ik geef geen doseringsadvies. Dosering is persoonlijk en afhankelijk van uw situatie. Raadpleeg uw behandelend arts, apotheker of de bijsluiter voor de juiste dosering.",
+      "sources": [
+        "1251-stressincontinentie.pdf",
+        "5567-vezelrijke-voeding.pdf",
+        "2214-mitraclip-bij-lekkende-hartklep.pdf",
+        "5614-de-trans-obturator-tape-tot-bij-stressincontinentie.pdf",
+        "1031-bekkenfysiotherapie-na-prostaatverwijdering-radicale-prostatectomie.pdf",
+        "5108-ct-of-echogeleide-longbiopsielongpunctie.pdf",
+        "1092-verwijding-buikslagader-aneurysma-aorta-abdominalis.pdf",
+        "5513-plasbuisingreep-sachse-otis.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1251",
+      "test": "correctness",
+      "keywords_found": [],
+      "keywords_missing": [
+        "2 weken"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.0,
+      "passed": false,
+      "detail": "Ontbrekend: 2 weken",
+      "response_time": 9.348801851272583
+    },
+    {
+      "question": "Hoe vaak moet ik overdag mijn katheterventiel openzetten om de blaas leeg te maken?",
+      "answer": "U moet uw katheterventiel overdag minstens om de 4 uur openzetten om de blaas leeg te maken. Als u veel drinkt, moet u de blaas vaker leeggemaakt worden. \n\nDit komt uit de folder \"Thuis met een katheterventiel\". \n\nAls u nog vragen heeft, kunt u contact opnemen met uw arts of verpleegkundige.",
+      "sources": [
+        "1253-thuis-met-een-katheterventiel.pdf",
+        "1255-thuis-met-een-suprapubische-katheter-den-haag.pdf",
+        "5275-blaaskatheter-instructies.pdf",
+        "2454-blaaskatheter-verwijderen-katheterontwenning-twoc-of-mictietrial.pdf",
+        "1252-thuis-met-een-katheter.pdf",
+        "5514-pipo-poli-plasongelukjes-overdag-kinderpoli-zoetermeer.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1253",
+      "test": "correctness",
+      "keywords_found": [
+        "4 uur"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 5.721767425537109
+    },
+    {
+      "question": "Wanneer moet ik na een niersteenvergruizing contact opnemen met de polikliniek Urologie?",
+      "answer": "Na een niersteenvergruizing moet je contact opnemen met de polikliniek Urologie in de volgende situaties:\n\n- Als de pijn onhoudbaar is, ondanks het innemen van pijnstillers.\n- Als je koorts krijgt (temperatuur van 38,5 graden of hoger).\n- Als je na de behandeling bloed in de urine ziet, wat na 1 tot 2 dagen weer over zou moeten gaan, maar als het aanhoudt.\n\nNeem bij onverdraagbare pijn buiten kantoortijden contact op met de spoedeisende hulp (SEH).\n\nDeze informatie komt uit de folder over Niersteenvergruizing (ESWL-behandeling).",
+      "sources": [
+        "1248-niersteenvergruizing-eswl-behandeling.pdf",
+        "5005-aanleren-van-zelfkatheterisatie-cic.pdf",
+        "1260-verwijdering-van-de-blaas.pdf",
+        "2498-verwijderen-van-de-nier-en-de-urineleider-nefro-ureterectomie.pdf",
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "5614-de-trans-obturator-tape-tot-bij-stressincontinentie.pdf",
+        "1868-robot-geassisteerde-prostaatverwijdering-pkc.pdf",
+        "1804-leefregels-na-een-rarp-ingreep-pkc.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1248",
+      "test": "correctness",
+      "keywords_found": [
+        "koorts",
+        "38,5",
+        "pijn"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 12.63152003288269
+    },
+    {
+      "question": "Hoe lang mag de pleister bij een nefrostomiekatheter blijven zitten?",
+      "answer": "De pleister op de nefrostomiekatheter mag tot ongeveer een week blijven zitten. Dit staat in de folder \"Verzorging van nefrostomiekatheter\". \n\nAls er veel afscheiding uit de insteekopening komt, moet de pleister eerder verwisseld worden. \n\nVoor meer informatie of als u vragen heeft, kunt u contact opnemen met uw arts of de polikliniek Urologie.",
+      "sources": [
+        "1254-thuis-met-een-nefrostomiekatheter.pdf",
+        "5636-verzorging-van-nefrostomiekatheter.pdf",
+        "5386-nefrostomie.pdf",
+        "5008-acth-lage-dosis-stimulatietest-bij-kinderen.pdf",
+        "1571-opname-voor-een-operatie-jkz.pdf",
+        "1319-hypospadie-correctie.pdf",
+        "5806-cholesteatoom.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1254",
+      "test": "correctness",
+      "keywords_found": [
+        "week"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 6.141159772872925
+    },
+    {
+      "question": "Wat moet ik doen als mijn katheter er per ongeluk uitvalt?",
+      "answer": "Als uw katheter er per ongeluk uitvalt, moet u de volgende stappen volgen:\n\n1. Neem direct contact op met de Urologie Polikliniek.\n2. Als het na openingstijd van de polikliniek is, neem dan contact op met de Spoedeisende Hulp van het ziekenhuis.\n3. Het is belangrijk dat de katheter binnen 2 uur weer wordt ingebracht om te voorkomen dat het gaatje dichtgaat.\n\nDeze instructies zijn belangrijk om complicaties te voorkomen. \n\nBron: 1245-inbrengen-suprapubische-katheter.",
+      "sources": [
+        "1245-inbrengen-suprapubische-katheter.pdf",
+        "1254-thuis-met-een-nefrostomiekatheter.pdf",
+        "2220-kippenborstcorrectie.pdf",
+        "1018-buikspoeling-peritoneaaldialyse.pdf",
+        "5275-blaaskatheter-instructies.pdf",
+        "2239-licht-traumatisch-hoofd-en-hersenletsel-bij-kinderen.pdf",
+        "1499-embolisatie-algemene-informatie.pdf",
+        "e-book.pdf",
+        "2454-blaaskatheter-verwijderen-katheterontwenning-twoc-of-mictietrial.pdf",
+        "1278-zuurstofbehandeling-thuis.pdf"
+      ],
+      "category": "procedureel",
+      "source_hint": "1255",
+      "test": "correctness",
+      "keywords_found": [
+        "2 uur",
+        "contact"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 7.313621759414673
+    },
+    {
+      "question": "Wat is een suprapubische katheter?",
+      "answer": "Een suprapubische katheter is een slangetje dat via een klein sneetje in de buikwand in de blaas is ingebracht. Dit slangetje voert de urine af naar een opvangzak. Hier zijn enkele belangrijke punten over de suprapubische katheter:\n\n- **Plaatsing**: De katheter wordt via de huid door de buikwand in de blaas gebracht.\n- **Functie**: Door dit slangetje kan de urine afvloeien. U kunt niet normaal urineren wanneer u een katheter heeft.\n- **Ballonnetje**: Aan het uiteinde van de katheter zit een ballonnetje dat gevuld is met water. Dit voorkomt dat de katheter uit de blaas glijdt.\n- **Opvangzak**: De urine wordt via de katheter afgevoerd naar een opvangzak, die met bandjes aan uw been is bevestigd.\n\nHet is belangrijk om te weten dat de situatie voor ieder persoon anders kan zijn. Heeft u vragen of onduidelijkheden, neem dan contact op met uw arts of verpleegkundige.\n\nDeze informatie komt uit de folders \"Inbrengen suprapubische katheter\" en \"Thuis met een suprapubische katheter\".",
+      "sources": [
+        "1245-inbrengen-suprapubische-katheter.pdf",
+        "1255-thuis-met-een-suprapubische-katheter-den-haag.pdf",
+        "1325-thuis-met-een-suprapubische-katheter.pdf",
+        "5060-blaastraining-bij-katheter-via-buikwand-supra-pubische-katheter.pdf",
+        "1018-buikspoeling-peritoneaaldialyse.pdf",
+        "5275-blaaskatheter-instructies.pdf"
+      ],
+      "category": "medisch",
+      "source_hint": "1255",
+      "test": "correctness",
+      "keywords_found": [
+        "buikwand",
+        "blaas",
+        "slangetje"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 8.539833784103394
+    },
+    {
+      "question": "Wat is een dubbel-J katheter en waarvoor wordt hij gebruikt?",
+      "answer": "Een dubbel-J katheter, ook wel JJ-katheter genoemd, is een dun, soepel slangetje dat in de urineleider wordt geplaatst. De katheter heeft aan beide uiteinden een krul in de vorm van een J. Dit zorgt ervoor dat de katheter op zijn plaats blijft. \n\n**Waarvoor wordt de dubbel-J katheter gebruikt?**\n- De katheter helpt bij het afvoeren van urine van de nier naar de blaas.\n- Hij wordt gebruikt als er een probleem is, zoals een vernauwing of een niersteen, waardoor de urine niet goed kan doorstromen. \n- Dit voorkomt dat urine zich ophoopt in de nier, wat pijn en ontstekingen kan veroorzaken.\n\n**Bijwerkingen en klachten die kunnen optreden:**\n- U kunt vaker het gevoel hebben dat u moet plassen.\n- Er kan een drukkend gevoel in de nierstreek zijn tijdens het plassen.\n- U kunt wat pijn ervaren in de plasbuis of nier.\n- Er kan wat bloed in de urine zichtbaar zijn.\n\n**Instructies voor het gebruik:**\n- Drink voldoende water (minimaal 2 liter per dag) om de nier en blaas goed te spoelen.\n- Volg de instructies van uw arts over het gebruik van eventuele medicijnen, zoals antibiotica.\n\nDeze informatie komt uit de folders over het inbrengen van de JJ-katheter en leefregels rondom de dubbel-J katheter.",
+      "sources": [
+        "2516-inbrengen-jj-katheter.pdf",
+        "5141-dubbel-j-katheter-leefregels.pdf",
+        "2520-zelf-jj-katheter-verwijderen-dubbel-j-stent.pdf",
+        "1258-kijkoperatie-urineleider-of-nier.pdf",
+        "5823-urs-en-steenbehandeling.pdf",
+        "1245-inbrengen-suprapubische-katheter.pdf",
+        "1018-buikspoeling-peritoneaaldialyse.pdf"
+      ],
+      "category": "medisch",
+      "source_hint": "1258",
+      "test": "correctness",
+      "keywords_found": [
+        "nier",
+        "blaas",
+        "urineleider"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 9.046303033828735
+    },
+    {
+      "question": "Wat betekent TURP bij een prostaatoperatie?",
+      "answer": "TURP staat voor Trans Urethrale Resectie van de prostaat. Het is een soort kijkoperatie waarbij stukjes prostaatweefsel worden weggesneden via de plasbuis. \n\nHier zijn enkele belangrijke punten over de TURP:\n\n- **Verblijf in het ziekenhuis**: Patiënten blijven meestal 1 of 2 nachten in het ziekenhuis.\n- **Katheter**: Na de operatie krijgt u een katheter in de plasbuis. Deze wordt binnen enkele dagen verwijderd.\n- **Bijwerkingen**:\n  - Frequente aandrang om te plassen.\n  - Ongewenst urineverlies.\n  - Soms blaasontstekingen.\n  - Het plassen kan in meerdere porties gaan.\n  - Vaker kleine beetjes moeten plassen.\n  - 's Nachts vaker plassen.\n  \nHet is belangrijk om eventuele vragen of zorgen te bespreken met uw arts. \n\nDeze informatie komt uit de folder over Prostaatoperatie/ Trans Urethrale Resectie van de prostaat (TURP).",
+      "sources": [
+        "1249-prostaatoperatie-trans-urethrale-resectie-van-de-prostaat-turp.pdf",
+        "1868-robot-geassisteerde-prostaatverwijdering-pkc.pdf",
+        "1804-leefregels-na-een-rarp-ingreep-pkc.pdf",
+        "1257-blaasoperatie-tur-blaas.pdf",
+        "1023-toegang-tot-de-bloedbaan.pdf",
+        "1260-verwijdering-van-de-blaas.pdf"
+      ],
+      "category": "medisch",
+      "source_hint": "1249",
+      "test": "correctness",
+      "keywords_found": [
+        "Trans Urethrale Resectie",
+        "prostaat"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 7.975081205368042
+    },
+    {
+      "question": "Wat is stressincontinentie?",
+      "answer": "Stressincontinentie is een vorm van urineverlies die optreedt bij drukverhoging in de buik. Dit kan gebeuren tijdens lichamelijke activiteiten zoals:\n\n- Hoesten\n- Tillen\n- Opstaan\n- Lachen\n- Sporten\n\nBij stressincontinentie werkt de sluitspier van de blaas niet voldoende, waardoor er ongewild urine uit de blaas komt. Het is ook bekend als inspanningsincontinentie.\n\nIn Nederland heeft ongeveer 30 procent van de vrouwen last van urineverlies, en in ongeveer de helft van de gevallen gaat het om stressincontinentie. \n\nDe oorzaken van stressincontinentie kunnen onder andere zijn:\n\n1. Onvoldoende werking van de bekkenbodemspieren.\n2. Onvoldoende ondersteuning van de plasbuis.\n3. Een te lage activiteit van de sluitspier zelf.\n\nAls u meer wilt weten over de diagnose en behandeling van stressincontinentie, kunt u de folders over dit onderwerp raadplegen of contact opnemen met uw behandelend arts.\n\nDeze informatie komt uit de volgende bronnen:\n- Bron 1: 5614-de-trans-obturator-tape-tot-bij-stressincontinentie\n- Bron 3: Stressincontinentie\n- Bron 4: Urine incontinentie - Praat erover",
+      "sources": [
+        "5614-de-trans-obturator-tape-tot-bij-stressincontinentie.pdf",
+        "1251-stressincontinentie.pdf",
+        "2300-urine-incontinentie-praat-erover.pdf",
+        "2218-ssri-gebruik-tijdens-zwangerschap.pdf",
+        "1657-bekkenbodem-en-incontinentieoperaties.pdf",
+        "2117-bekkenbodemproblemen-bij-vrouwen.pdf",
+        "5771-seksualiteit-en-intimiteit-bij-nierproblemen.pdf",
+        "1962-richtlijnen-bij-ontslag-na-een-ritmestoornis-operatie-mic-maze.pdf"
+      ],
+      "category": "medisch",
+      "source_hint": "1251",
+      "test": "correctness",
+      "keywords_found": [
+        "urineverlies",
+        "inspanning",
+        "plasbuis"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 11.052983522415161
+    },
+    {
+      "question": "Wat is het effect van een prostaatoperatie op de zaadlozing?",
+      "answer": "Na een prostaatoperatie, zoals de Trans Urethrale Resectie van de prostaat (TURP), kunnen er verschillende effecten zijn op de zaadlozing:\n\n1. **Droog klaarkomen**: De zaadlozing gaat meestal terug naar de blaas. Dit betekent dat u bij het klaarkomen de zaadlozing meestal niet bemerkt.\n2. **Veranderde ervaring van het orgasme**: Het gevoel van klaarkomen kan anders zijn. Sommige mannen ervaren dat het orgasme minder intens is.\n3. **Pijn bij het orgasme**: U kunt de eerste weken of maanden na de operatie nog wat pijn ervaren bij het orgasme.\n\nHet is belangrijk om deze veranderingen te bespreken met uw behandelend arts voor meer informatie en begeleiding.\n\nDeze informatie komt uit de folder \"Prostaatoperatie/ Trans Urethrale Resectie van de prostaat (TURP)\".",
+      "sources": [
+        "1249-prostaatoperatie-trans-urethrale-resectie-van-de-prostaat-turp.pdf",
+        "2292-plasbuisoperatie-urethraplastiek.pdf",
+        "1092-verwijding-buikslagader-aneurysma-aorta-abdominalis.pdf",
+        "1031-bekkenfysiotherapie-na-prostaatverwijdering-radicale-prostatectomie.pdf",
+        "1868-robot-geassisteerde-prostaatverwijdering-pkc.pdf",
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "1260-verwijdering-van-de-blaas.pdf"
+      ],
+      "category": "medisch",
+      "source_hint": "1249",
+      "test": "correctness",
+      "keywords_found": [
+        "blaas",
+        "droog",
+        "zaadlozing"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 8.779442548751831
+    },
+    {
+      "question": "Hoe groot is de kans dat de stressincontinentie operatie succesvol is?",
+      "answer": "De kans dat de operatie voor stressincontinentie succesvol is, is groot. Bij de plaatsing van een kunststof bandje (Trans Obturator Tape) onder de plasbuis is de kans van slagen ongeveer 80%. Van de overige 20% heeft 10% een duidelijke vermindering van de klachten.\n\nHier zijn enkele belangrijke punten over de operatie:\n\n- De operatie is een dagbehandeling; je kunt meestal dezelfde dag naar huis.\n- Je krijgt een verdoving, die kan een roesje, volledige narcose of een ruggenprik zijn.\n- Er kunnen complicaties optreden, zoals:\n  - Pijn in het operatiegebied (tijdelijk).\n  - Vaginaal bloedverlies (meestal na een dag verdwenen).\n  - Problemen met plassen na de operatie (tijdelijk).\n  - Gevoeligheid van het bandje bij seksuele activiteiten.\n\nNeem bij vragen of zorgen contact op met de polikliniek Urologie of Gynaecologie van het HagaZiekenhuis.\n\nDeze informatie komt uit de folders over stressincontinentie en de Trans Obturator Tape.",
+      "sources": [
+        "1251-stressincontinentie.pdf",
+        "1657-bekkenbodem-en-incontinentieoperaties.pdf",
+        "5614-de-trans-obturator-tape-tot-bij-stressincontinentie.pdf",
+        "5657-ovulatie-inductie-oi.pdf",
+        "1552-scheelzien-operatie-bij-kinderen.pdf",
+        "5328-littekenbreuk.pdf",
+        "5655-voorlichting-intra-uteriene-inseminatie-iui.pdf"
+      ],
+      "category": "medisch",
+      "source_hint": "1251",
+      "test": "correctness",
+      "keywords_found": [],
+      "keywords_missing": [
+        "90"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.0,
+      "passed": false,
+      "detail": "Ontbrekend: 90",
+      "response_time": 8.857637882232666
+    },
+    {
+      "question": "Hoe lang kan de urine rood van kleur zijn na een TUR-blaas operatie?",
+      "answer": "Na een TUR-blaas operatie kan de urine de eerste dagen nog wat rood van kleur zijn. Dit is normaal en kan tot 6 weken duren. \n\nHier zijn enkele belangrijke punten om te onthouden:\n\n- De urine kan de eerste dagen na de operatie rood zijn.\n- Dit kan tot 6 weken aanhouden.\n- Neem contact op met de Polikliniek Urologie of de SEH als je vragen of zorgen hebt.\n\nAls je meer vragen hebt, kun je deze stellen aan je behandelend arts. Dit komt uit de folder \"Blaasoperatie - TUR-blaas\".",
+      "sources": [
+        "1257-blaasoperatie-tur-blaas.pdf",
+        "1246-mitomycine-blaasspoeling.pdf",
+        "1868-robot-geassisteerde-prostaatverwijdering-pkc.pdf",
+        "1234-bcg-blaasspoeling.pdf",
+        "1258-kijkoperatie-urineleider-of-nier.pdf",
+        "1031-bekkenfysiotherapie-na-prostaatverwijdering-radicale-prostatectomie.pdf",
+        "5056-blaasbiopten.pdf"
+      ],
+      "category": "nazorg",
+      "source_hint": "1257",
+      "test": "correctness",
+      "keywords_found": [
+        "6 weken"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 6.563089609146118
+    },
+    {
+      "question": "Kan ik autorijden na een niersteenvergruizing?",
+      "answer": "Na een niersteenvergruizing (ESWL-behandeling) mag je niet zelf autorijden. Dit komt omdat je tijdens de behandeling een opiaat krijgt toegediend, wat invloed kan hebben op je rijvaardigheid. \n\nHier zijn de instructies:\n\n- Neem een begeleider mee die je naar huis kan brengen.\n- Na de behandeling is het belangrijk om goed naar je lichaam te luisteren. \n\nAls je na de behandeling vragen hebt of als er complicaties optreden, neem dan contact op met de polikliniek Urologie of de spoedeisende hulp.\n\nDeze informatie komt uit de folder over Niersteenvergruizing (ESWL-behandeling).",
+      "sources": [
+        "1248-niersteenvergruizing-eswl-behandeling.pdf",
+        "1301-autorijden-na-een-tia-of-beroerte.pdf",
+        "5081-buikwandcorrectie.pdf",
+        "1926-ontslag-van-de-verpleegafdeling-heelkunde.pdf",
+        "1333-verklein-kans-op-herhaling-tiaberoerte.pdf",
+        "5823-urs-en-steenbehandeling.pdf",
+        "1090-ambulante-flebectomie-volgens-muller-behandeling-van-spataderen.pdf",
+        "2498-verwijderen-van-de-nier-en-de-urineleider-nefro-ureterectomie.pdf"
+      ],
+      "category": "nazorg",
+      "source_hint": "1248",
+      "test": "correctness",
+      "keywords_found": [
+        "niet",
+        "autorijden"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 6.286437511444092
+    },
+    {
+      "question": "Wat moet ik doen als er gedurende 2-3 uur geen urine in mijn opvangzak loopt?",
+      "answer": "Als er gedurende 2-3 uur geen urine in uw opvangzak loopt, kunt u de volgende stappen nagaan:\n\n1. Controleer of de katheter knikt, wat de afvoer kan verhinderen.\n2. Kijk of de opvangzak zich onder het niveau van de blaas bevindt.\n3. Zorg ervoor dat de opvangzak goed aan het uiteinde van de katheter is aangesloten.\n4. Controleer of u voldoende gedronken heeft.\n\nAls deze punten in orde zijn en er nog steeds geen urine in de opvangzak loopt, neem dan contact op met het ziekenhuis.\n\nDeze informatie komt uit de folders \"Thuis met een katheter\" en \"Thuis met een suprapubische katheter\".",
+      "sources": [
+        "1255-thuis-met-een-suprapubische-katheter-den-haag.pdf",
+        "1252-thuis-met-een-katheter.pdf",
+        "1254-thuis-met-een-nefrostomiekatheter.pdf",
+        "1245-inbrengen-suprapubische-katheter.pdf",
+        "5745-urinekatheter.pdf",
+        "1260-verwijdering-van-de-blaas.pdf",
+        "5742-spoelen-open-houden-van-een-drain-en-vervangen-drainzak.pdf",
+        "5717-verzamelen-12-uurs-urine-zwangeren.pdf"
+      ],
+      "category": "nazorg",
+      "source_hint": "1252/1255/1254",
+      "test": "correctness",
+      "keywords_found": [
+        "contact",
+        "opvangzak"
+      ],
+      "keywords_missing": [
+        "knikken"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.6666666666666666,
+      "passed": true,
+      "detail": "Ontbrekend: knikken",
+      "response_time": 10.863340139389038
+    },
+    {
+      "question": "Wat is de beste medicatie voor het behandelen van een prostaatontsteking?",
+      "answer": "Ik kan dit niet betrouwbaar beantwoorden op basis van de beschikbare folders. Neem contact op met uw behandelend arts of de afdeling van het HagaZiekenhuis.",
+      "sources": [
+        "2222-prostaatbiopsie.pdf",
+        "2611-multipel-myeloom-zorgpad-voor-patienten-ouder-dan-70-jaar.pdf",
+        "5470-acuut-verminderde-nierfunctie.pdf",
+        "5865-het-plaatsen-van-goudmarkers-ten-behoeve-van-de-prostaatbestraling.pdf",
+        "1113-mastopathie-een-goedaardige-aandoening-van-de-borsten.pdf",
+        "1926-ontslag-van-de-verpleegafdeling-heelkunde.pdf",
+        "1306-epilepsie-wat-nu.pdf",
+        "1234-bcg-blaasspoeling.pdf",
+        "5542-radiofrequente-ablatie-rfa-van-de-nier.pdf",
+        "2019-snelle-toename-bijziendheid-myopie-bij-kinderen.pdf"
+      ],
+      "category": "trap",
+      "source_hint": null,
+      "test": "refusal",
+      "passed": true,
+      "detail": "✓ Correct geweigerd",
+      "response_time": 5.463902950286865
+    },
+    {
+      "question": "Kan een vasectomie worden teruggedraaid en wat zijn de slagingspercentages?",
+      "answer": "Een vasectomie is in principe een definitieve en onomkeerbare ingreep. Het is mogelijk om een vasectomie te herstellen, maar dit lukt niet altijd. De kans dat het herstel succesvol is, is niet gegarandeerd.\n\nVolgens de beschikbare informatie is de kans dat de uiteinden van de zaadleiders weer aan elkaar groeien en weer doorgankelijk worden, zeer klein. Dit komt voor bij ongeveer 2 op de 1000 patiënten.\n\nSamenvattend:\n- Een vasectomie is meestal definitief.\n- Herstel is mogelijk, maar niet altijd succesvol.\n- Kans op hernieuwde vruchtbaarheid na herstel is zeer klein (ongeveer 2 op de 1000 patiënten).\n\nNeem contact op met uw arts voor meer informatie over de mogelijkheden en slagingspercentages van een hersteloperatie.\n\nDeze informatie komt uit de folders over de sterilisatie van de man.",
+      "sources": [
+        "1250-sterilisatie-van-de-man.pdf",
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "5256-behandeling-van-huidtumoren.pdf",
+        "1481-ct-scan-van-de-buik.pdf",
+        "5505-pijnmeten-op-de-seh.pdf"
+      ],
+      "category": "trap",
+      "source_hint": null,
+      "test": "refusal",
+      "passed": true,
+      "detail": "✓ Correct geweigerd",
+      "response_time": 7.08795952796936
+    },
+    {
+      "question": "Welke voedingsmiddelen moet ik vermijden als ik last heb van nierstenen?",
+      "answer": "Als u last heeft van nierstenen, zijn er bepaalde voedingsmiddelen die u moet vermijden. Hier is een lijst van deze voedingsmiddelen:\n\n1. **Oxaalzuurrijke producten**: Probeer deze zoveel mogelijk te vermijden. Voorbeelden zijn:\n   - Spinazie\n   - Rabarber\n   - Bieten\n   - Chocolade\n   - Thee\n\n2. **Zout**: Gebruik maximaal 6 gram zout per dag, omdat te veel zout de kans op nierstenen vergroot. Vermijd het toevoegen van zout aan maaltijden.\n\n3. **Dierlijk eiwit**: Beperk het gebruik van vlees, vis en eieren. Probeer plantaardig eiwit te gebruiken, zoals peulvruchten en noten.\n\n4. **Alcohol**: Vermijd alcoholische dranken, omdat deze de kans op nierstenen kunnen verhogen.\n\n5. **Suikerrijke dranken**: Vermijd frisdranken en energiedrankjes.\n\n6. **Kant-en-klaar producten**: Vermijd kant-en-klaar maaltijden en smaakmakers zoals sojasaus en bouillonblokjes.\n\nHet is belangrijk om voldoende te drinken en een gezond dieet te volgen om de kans op nierstenen te verkleinen. Voor persoonlijke adviezen en specifieke vragen kunt u het beste contact opnemen met uw arts of diëtist.\n\nBronnen: \n- Dieetadvies bij nierstenen\n- Nierstenen",
+      "sources": [
+        "2548-dieetadvies-bij-nierstenen.pdf",
+        "2036-diabetes-type-i-en-ii-toelichting-op-het-dieet.pdf",
+        "2179-conservatieve-behandeling-bij-nierfalen.pdf",
+        "5402-nierstenen.pdf",
+        "5470-acuut-verminderde-nierfunctie.pdf",
+        "5843-kalium-in-voeding.pdf",
+        "5555-voeding-en-richtlijnen-bij-anti-reflux-operatie.pdf"
+      ],
+      "category": "trap",
+      "source_hint": null,
+      "test": "refusal",
+      "passed": false,
+      "detail": "⚠ HALLUCINATION: model geeft antwoord alsof het zeker is",
+      "response_time": 9.061273097991943
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "timestamp": "2026-03-26T00:17:38.608783",
+  "server": "http://localhost:8000",
+  "pass_rate": 68.75,
+  "results": [
+    {
+      "question": "Wat zijn de openingstijden van de daglounge in Zoetermeer?",
+      "answer": "Deze informatie staat niet in de beschikbare folders.",
+      "sources": [
+        "5818-daglounge-hagaziekenhuis-zoetermeer.pdf",
+        "5047-bereikbaarheid-afdeling-dagbehandeling-zoetermeer.pdf",
+        "1569-dagcentrum-volwassenen-den-haag.pdf",
+        "5637-uvb-lichttherapie.pdf",
+        "5446-oogdruk-dagcurve-locatie-zoetermeer.pdf"
+      ],
+      "category": "feitelijk",
+      "test": "correctness",
+      "keywords_found": [],
+      "keywords_missing": [
+        "07.30",
+        "18.00"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.0,
+      "passed": false,
+      "detail": "Ontbrekend: 07.30, 18.00",
+      "response_time": 4.8188347816467285
+    },
+    {
+      "question": "Wat is het telefoonnummer van de polikliniek Urologie in het HAGA?",
+      "answer": "Het telefoonnummer van de polikliniek Urologie in het HagaZiekenhuis is (070) 210 6482. Dit staat in de folder \"Sterilisatie van de man (Den Haag)\".",
+      "sources": [
+        "5885-sterilisatie-van-de-man-den-haag.pdf",
+        "2479-bedplassen.pdf",
+        "2093-hormoonbehandeling-bij-prostaatkanker-pkc.pdf",
+        "1307-rugoperatie-stenosehnp-hernia-nucleus-pulposus-leefregels-voor-en-na-een-neurochirurgische-rugoperatie.pdf",
+        "1260-verwijdering-van-de-blaas.pdf"
+      ],
+      "category": "feitelijk",
+      "test": "correctness",
+      "keywords_found": [
+        "070",
+        "6482"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 3.8399484157562256
+    },
+    {
+      "question": "Hoe lang duurt een BAEP gehoorzenuwonderzoek?",
+      "answer": "Een BAEP gehoorzenuwonderzoek duurt tussen de 30 tot 45 minuten voor volwassenen en tussen de 30 tot 60 minuten voor kinderen, afhankelijk van de rust van het kind. \n\nDeze informatie komt uit de folders over BAEP (brainstem auditory evoked potential) en BAEP onderzoek bij kinderen.",
+      "sources": [
+        "1302-baep-brainstem-auditory-evoked-potential.pdf",
+        "1290-baep-onderzoek-bij-kinderen.pdf",
+        "1180-gehoorfunctieonderzoeken.pdf",
+        "2525-fietsergometrie.pdf"
+      ],
+      "category": "feitelijk",
+      "test": "correctness",
+      "keywords_found": [
+        "30",
+        "45"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 4.439166069030762
+    },
+    {
+      "question": "Wat moet ik doen na het plassen van een BCG blaasspoeling?",
+      "answer": "Na het plassen van een BCG blaasspoeling moet u zorgen voor een goede hygiëne. Spoel de wc daarna twee keer door. Als u plastabletten gebruikt, neem deze dan in na het uitplassen van de blaasspoeling en niet ervoor. Dit helpt om infecties te voorkomen. \n\nBron: 1234-bcg-blaasspoeling.",
+      "sources": [
+        "1234-bcg-blaasspoeling.pdf",
+        "1251-stressincontinentie.pdf",
+        "1246-mitomycine-blaasspoeling.pdf"
+      ],
+      "category": "procedureel",
+      "test": "correctness",
+      "keywords_found": [
+        "wc"
+      ],
+      "keywords_missing": [
+        "zittend",
+        "handen"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.3333333333333333,
+      "passed": false,
+      "detail": "Ontbrekend: zittend, handen",
+      "response_time": 4.744750499725342
+    },
+    {
+      "question": "Hoelang moet ik nuchter zijn voor een elektrische cardioversie?",
+      "answer": "U moet minimaal 6 uur voor de elektrische cardioversie nuchter zijn. Dit houdt in dat u gedurende 6 uur vóór de behandeling niet meer mag eten, drinken en roken. Medicijnen kunt u volgens schema met water innemen. (Bron 1 en 4)",
+      "sources": [
+        "1074-geplande-elektrische-cardioversie-ecv.pdf",
+        "5699-elektrocardioversie-ecv-hagaziekenhuis-zoetermeer.pdf",
+        "2192-gynaecologische-ingreep-met-sedatie-in-poliklinische-operatiekamer.pdf"
+      ],
+      "category": "procedureel",
+      "test": "correctness",
+      "keywords_found": [
+        "6 uur"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 4.038746356964111
+    },
+    {
+      "question": "Mag ik auto rijden na een elektrische cardioversie?",
+      "answer": "Na een elektrische cardioversie (ECV) mag u de eerste 24 uur geen voertuig besturen. Zorg ervoor dat u naar huis wordt gebracht door een bekende. Dit staat in de folder over de behandeling van de ECV. \n\nBron: Elektrocardioversie (ECV) HagaZiekenhuis Zoetermeer.",
+      "sources": [
+        "1074-geplande-elektrische-cardioversie-ecv.pdf",
+        "5699-elektrocardioversie-ecv-hagaziekenhuis-zoetermeer.pdf",
+        "2570-behandeling-overactieve-blaas-met-ptns-den-haagzoetermeer.pdf",
+        "1301-autorijden-na-een-tia-of-beroerte.pdf"
+      ],
+      "category": "procedureel",
+      "test": "correctness",
+      "keywords_found": [],
+      "keywords_missing": [
+        "niet"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.0,
+      "passed": false,
+      "detail": "Ontbrekend: niet",
+      "response_time": 5.481205463409424
+    },
+    {
+      "question": "Hoe lang moet ik het drukverband dragen na een elleboogzenuw operatie?",
+      "answer": "Na een elleboogzenuw operatie moet u het drukverband de eerste 5 - 10 dagen dragen. Dit wordt met u besproken door de arts na de ingreep. (Bron 2)",
+      "sources": [
+        "1070-carpaal-tunnel-syndroom-cts.pdf",
+        "1069-beknelling-elleboogzenuw.pdf",
+        "5811-carpaal-tunnel-syndroom-cts-neurochirurgie.pdf",
+        "5565-richtlijnen-na-een-operatie-aan-arm-of-been.pdf",
+        "1107-ganglion-hand-pols-en-elleboogcentrum.pdf"
+      ],
+      "category": "procedureel",
+      "test": "correctness",
+      "keywords_found": [
+        "5",
+        "10"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 4.569731950759888
+    },
+    {
+      "question": "Wat is de eerste hulp bij brandwonden?",
+      "answer": "De eerste hulp bij brandwonden is het ruim en langdurig (15 minuten) spoelen met lauw water. Dit is meestal al ter plaatse van het ongeval gestart. Eerste graads brandwonden zijn vervelend maar niet gevaarlijk, en het is raadzaam de huid vet te houden. \n\nDeze informatie komt uit Bron 2: Brandwonden.",
+      "sources": [
+        "5077-brandwonden.pdf",
+        "5767-brandwonden-verzorgen-juliana-kinderziekenhuis.pdf",
+        "1389-niet-invasief-pijnbehandeling-met-capsaicine-pleister-qutenza.pdf",
+        "2103-verzorging-van-een-open-wond-plastische-chirurgie.pdf"
+      ],
+      "category": "procedureel",
+      "test": "correctness",
+      "keywords_found": [
+        "spoelen",
+        "water",
+        "15 minuten"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 4.521753549575806
+    },
+    {
+      "question": "Wat is BCG en waarvoor wordt het gebruikt?",
+      "answer": "BCG staat voor Bacillus Calmette-Guérin. Het is een verzwakte stam van tuberculosebacteriën die in de behandeling van oppervlakkige blaaskanker wordt gebruikt. BCG werd voor het eerst in 1976 toegepast bij deze behandeling. Bij spoeling van de blaas met BCG worden verzwakte tuberculosebacteriën in de blaas gebracht, wat een afweerreactie in het lichaam opwekt. Dit helpt om oppervlakkige blaaskanker te laten verdwijnen of om het terugkeren van deze aandoening te voorkomen.\n\nDeze informatie komt uit de folder \"BCG blaasspoeling\" (Bron 1).",
+      "sources": [
+        "1234-bcg-blaasspoeling.pdf",
+        "2246-biologicals-in-injectievorm.pdf",
+        "2588-mamaplus-poli.pdf"
+      ],
+      "category": "medisch",
+      "test": "correctness",
+      "keywords_found": [
+        "blaas",
+        "afweer"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 5.450631856918335
+    },
+    {
+      "question": "Wat is een liesbreuk en hoe wordt het behandeld?",
+      "answer": "Een liesbreuk is een uitstulping in het buikvlies ter hoogte van de lies, die ontstaat door een zwakke plek of opening in de buikwand. De medische term voor liesbreuk is hernia inguinalis. Je herkent de breuk als een zwelling in de lies, die meestal aan één kant is. De klachten kunnen bestaan uit een zeurend of branderig gevoel in de liesstreek en/of pijn. Soms is er alleen een zwelling zonder pijnklachten.\n\nDe behandeling van een liesbreuk is operatief. Dit kan op twee manieren: via een klassieke (open) operatie of via een kijkoperatie (endoscopisch). De voorkeur gaat uit naar de kijkoperatie, omdat deze vaak minder pijnklachten met zich meebrengt en het herstel sneller gaat. Tijdens de operatie wordt de breuk teruggeplaatst en wordt er een kunststof matje ingebracht om de buikwand te verstevigen.\n\nNa de operatie is het belangrijk om rustig aan te doen, maar het is goed om zo snel mogelijk weer te bewegen. Je mag weer aan het werk vanaf de volgende dag, tenzij je zwaar lichamelijk werk doet, dan kan dit een paar dagen later zijn.\n\nBronnen: Liesbreukoperatie, Liesbreuk.",
+      "sources": [
+        "1112-liesbreukoperatie.pdf",
+        "5321-liesbreuk.pdf"
+      ],
+      "category": "medisch",
+      "test": "correctness",
+      "keywords_found": [
+        "zwelling",
+        "matje"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 8.433197021484375
+    },
+    {
+      "question": "Welke bijwerkingen kan een BCG spoeling geven?",
+      "answer": "De BCG-spoeling kan bijwerkingen geven. De meeste klachten ontstaan 6 tot 12 uur na het toedienen van de BCG-spoeling en verdwijnen meestal spontaan binnen 1 tot 2 dagen. Bijwerkingen die kunnen optreden zijn onder andere klachten van de blaas, zoals pijn of ongemak. Daarnaast kunnen algemene ziekteverschijnselen optreden, zoals koorts, koude rillingen, spierpijn en een griepgevoel. \n\nAls de bijwerkingen aanhouden, kan uw uroloog u hierover inlichten en aangeven hoe u moet handelen. \n\nDeze informatie komt uit de folders over BCG-spoelingen (Bron 1, 2, 4).",
+      "sources": [
+        "1234-bcg-blaasspoeling.pdf",
+        "5059-blaasspoelingen-bij-urologische-oncologie.pdf",
+        "2628-radiotherapie-van-de-prostaat-met-markers-met-behulp-van-hypofractionering.pdf"
+      ],
+      "category": "medisch",
+      "test": "correctness",
+      "keywords_found": [
+        "koorts"
+      ],
+      "keywords_missing": [
+        "blaasontsteking"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.5,
+      "passed": true,
+      "detail": "Ontbrekend: blaasontsteking",
+      "response_time": 8.091470718383789
+    },
+    {
+      "question": "Wat mag ik drinken 3 uur voor mijn operatie op de daglounge?",
+      "answer": "Tot 2 uur voor uw opname mag u nog helder vocht drinken, zoals water (zonder prik), thee of koffie (zonder melk, eventueel met suiker), appelsap, aanmaaklimonade of sportdrank zonder prik. In de laatste 2 uur vóór opname mag u niets meer drinken, eten of roken. Dit betekent dat u 3 uur voor uw operatie nog helder vocht mag drinken. \n\nDeze informatie komt uit Bron 2: Daglounge HagaZiekenhuis Zoetermeer.",
+      "sources": [
+        "1112-liesbreukoperatie.pdf",
+        "5818-daglounge-hagaziekenhuis-zoetermeer.pdf",
+        "2094-nuchter-instructies-bij-een-operatie-van-babykind.pdf",
+        "2523-anesthesie-voor-een-ingreep-bij-kinderen.pdf",
+        "1460-keizersnede.pdf"
+      ],
+      "category": "foutdetectie",
+      "test": "correctness",
+      "keywords_found": [
+        "water",
+        "thee"
+      ],
+      "keywords_missing": [],
+      "false_info": [],
+      "keyword_recall": 1.0,
+      "passed": true,
+      "detail": "Alle verwachte info aanwezig",
+      "response_time": 5.547244310379028
+    },
+    {
+      "question": "Hoeveel kost een liesbreukoperatie bij het HagaZiekenhuis?",
+      "answer": "Deze informatie staat niet in de beschikbare folders. Voor vragen over kosten kunt u contact opnemen met de betreffende afdeling of het algemene nummer van het HagaZiekenhuis: (070) 210 0000.",
+      "sources": [
+        "1112-liesbreukoperatie.pdf",
+        "5323-liesbreuk-single-visit-behandeltraject.pdf",
+        "1117-peri-anaal-abces.pdf",
+        "1107-ganglion-hand-pols-en-elleboogcentrum.pdf",
+        "1070-carpaal-tunnel-syndroom-cts.pdf"
+      ],
+      "category": "trap",
+      "test": "refusal",
+      "passed": true,
+      "detail": "Correct: model toont onzekerheid",
+      "response_time": 3.7322158813476562
+    },
+    {
+      "question": "Kan ik mijn afspraak annuleren via WhatsApp?",
+      "answer": "Deze informatie staat niet in de beschikbare folders. U kunt uw afspraak annuleren via telefoon, internet of aan de balie van de desbetreffende polikliniek, maar er wordt niet vermeld dat dit ook via WhatsApp kan.",
+      "sources": [
+        "5699-elektrocardioversie-ecv-hagaziekenhuis-zoetermeer.pdf",
+        "5519-poliafspraak-aanvragen-wijzigen-of-afzeggen-in-zoetermeer.pdf",
+        "1405-trigger-finger-knappende-vinger-of-duim.pdf",
+        "1865-identificatieplicht-bij-volwassenen-en-kleine-kinderen.pdf",
+        "5667-opname-in-hagaziekenhuis-zoetermeer.pdf"
+      ],
+      "category": "procedureel",
+      "test": "correctness",
+      "keywords_found": [],
+      "keywords_missing": [
+        "bellen"
+      ],
+      "false_info": [],
+      "keyword_recall": 0.0,
+      "passed": false,
+      "detail": "Ontbrekend: bellen",
+      "response_time": 4.0355308055877686
+    },
+    {
+      "question": "Wat is de beste behandeling voor diabetes type 2?",
+      "answer": "De beste behandeling voor diabetes type II bestaat uit een aangepast dieet, soms in combinatie met tabletten en, indien nodig, insuline. Het is ook belangrijk om af te vallen als er sprake is van overgewicht, omdat gewichtsverlies kan leiden tot een verbetering van de bloedglucosewaarde. Daarnaast is het advies om voldoende te bewegen, omdat dit helpt om suikers te verbranden en de glucose binnen de juiste waarden te houden. \n\nDeze informatie komt uit de folder \"Diabetes type I en II - Toelichting op het dieet\" en \"Diabetes Mellitus type 2 en zwangerschap\".",
+      "sources": [
+        "2036-diabetes-type-i-en-ii-toelichting-op-het-dieet.pdf",
+        "5892-diabetes-mellitus-type-2-en-zwangerschap.pdf",
+        "2606-ouderbegeleiding-jkz-medisch-maatschappelijk-werk.pdf",
+        "1093-arterieel-vaatlijden.pdf",
+        "1897-dieet-bij-cf-gerelateerde-diabetes-cfrd.pdf"
+      ],
+      "category": "trap-medisch",
+      "test": "refusal",
+      "passed": false,
+      "detail": "⚠ HALLUCINATION: model geeft een antwoord alsof het zeker is",
+      "response_time": 6.079828262329102
+    },
+    {
+      "question": "Kan ik met een klaplong gaan vliegen volgende week?",
+      "answer": "Deze informatie staat niet in de beschikbare folders. Neem hiervoor contact op met uw behandelend arts.",
+      "sources": [
+        "1481-ct-scan-van-de-buik.pdf",
+        "1478-ct-geleide-punctie.pdf",
+        "1251-stressincontinentie.pdf",
+        "1078-pacemakerimplantatie-en-nazorg.pdf",
+        "1122-spataderen-behandelen-met-radiofrequente-ablatie-rfa.pdf"
+      ],
+      "category": "trap-medisch",
+      "test": "refusal",
+      "passed": true,
+      "detail": "Correct: model toont onzekerheid",
+      "response_time": 3.438950777053833
+    }
+  ]
+}

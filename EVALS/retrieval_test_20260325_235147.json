@@ -1,0 +1,553 @@
+{
+  "timestamp": "2026-03-25T23:51:47.135321",
+  "top_k": 5,
+  "mrr": 0.8020833333333334,
+  "avg_keyword_recall": 0.9198717948717949,
+  "avg_top_similarity": 0.8487307692307693,
+  "results": [
+    {
+      "question": "Wat zijn de openingstijden van de daglounge in Zoetermeer?",
+      "expected_source": "daglounge",
+      "expected_keywords": [
+        "07.30",
+        "18.00",
+        "maandag"
+      ],
+      "category": "feitelijk",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "07.30",
+        "18.00",
+        "maandag"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.832,
+      "avg_similarity": 0.8225999999999999
+    },
+    {
+      "question": "Wat is het telefoonnummer van de polikliniek Urologie?",
+      "expected_source": "bcg",
+      "expected_keywords": [
+        "070",
+        "210 6482"
+      ],
+      "category": "feitelijk",
+      "source_found": false,
+      "source_rank": null,
+      "keywords_found": [
+        "070",
+        "210 6482"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.862,
+      "avg_similarity": 0.8535999999999999
+    },
+    {
+      "question": "Waar kan ik contact opnemen bij brandwonden buiten kantooruren?",
+      "expected_source": "brandwonden",
+      "expected_keywords": [
+        "Spoedeisende Hulp",
+        "079"
+      ],
+      "category": "feitelijk",
+      "source_found": true,
+      "source_rank": 2,
+      "keywords_found": [
+        "Spoedeisende Hulp",
+        "079"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.863,
+      "avg_similarity": 0.8544
+    },
+    {
+      "question": "Wat is het telefoonnummer van de Cardiolounge?",
+      "expected_source": "cardioversie",
+      "expected_keywords": [
+        "070",
+        "210 1847"
+      ],
+      "category": "feitelijk",
+      "source_found": false,
+      "source_rank": null,
+      "keywords_found": [
+        "070"
+      ],
+      "keywords_missing": [
+        "210 1847"
+      ],
+      "keyword_recall": 0.5,
+      "top_similarity": 0.848,
+      "avg_similarity": 0.8394
+    },
+    {
+      "question": "Hoe lang duurt een BAEP onderzoek?",
+      "expected_source": "baep",
+      "expected_keywords": [
+        "30",
+        "45",
+        "minuten"
+      ],
+      "category": "feitelijk",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "30",
+        "45",
+        "minuten"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.849,
+      "avg_similarity": 0.8400000000000001
+    },
+    {
+      "question": "Hoe bereid ik me voor op een BCG blaasspoeling?",
+      "expected_source": "bcg",
+      "expected_keywords": [
+        "nuchter",
+        "drinken",
+        "vier uur"
+      ],
+      "category": "procedureel",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "vier uur"
+      ],
+      "keywords_missing": [
+        "nuchter",
+        "drinken"
+      ],
+      "keyword_recall": 0.3333333333333333,
+      "top_similarity": 0.838,
+      "avg_similarity": 0.8273999999999999
+    },
+    {
+      "question": "Wat moet ik doen na het uitplassen van een BCG spoeling?",
+      "expected_source": "bcg",
+      "expected_keywords": [
+        "zittend",
+        "wc",
+        "handen",
+        "spoelen"
+      ],
+      "category": "procedureel",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "zittend",
+        "wc",
+        "spoelen"
+      ],
+      "keywords_missing": [
+        "handen"
+      ],
+      "keyword_recall": 0.75,
+      "top_similarity": 0.835,
+      "avg_similarity": 0.8288
+    },
+    {
+      "question": "Hoe bereid ik me voor op een elektrische cardioversie?",
+      "expected_source": "cardioversie",
+      "expected_keywords": [
+        "nuchter",
+        "6 uur",
+        "bloedverdunners",
+        "bodylotion"
+      ],
+      "category": "procedureel",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "nuchter",
+        "6 uur",
+        "bloedverdunners",
+        "bodylotion"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.853,
+      "avg_similarity": 0.8413999999999999
+    },
+    {
+      "question": "Wat moet ik meenemen naar de daglounge in Zoetermeer?",
+      "expected_source": "daglounge",
+      "expected_keywords": [
+        "medicijnen",
+        "slippers",
+        "kleding"
+      ],
+      "category": "procedureel",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "medicijnen",
+        "slippers",
+        "kleding"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.853,
+      "avg_similarity": 0.8288
+    },
+    {
+      "question": "Hoe lang moet ik het drukverband dragen na een elleboogoperatie?",
+      "expected_source": "elleboogzenuw",
+      "expected_keywords": [
+        "5",
+        "10",
+        "dagen"
+      ],
+      "category": "procedureel",
+      "source_found": true,
+      "source_rank": 4,
+      "keywords_found": [
+        "5",
+        "10",
+        "dagen"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.844,
+      "avg_similarity": 0.8390000000000001
+    },
+    {
+      "question": "Moet ik stoppen met bloedverdunners voor een ooglidoperatie?",
+      "expected_source": "ooglid",
+      "expected_keywords": [
+        "Aspirine",
+        "stoppen",
+        "vijf dagen"
+      ],
+      "category": "procedureel",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "Aspirine",
+        "stoppen",
+        "vijf dagen"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.865,
+      "avg_similarity": 0.8612
+    },
+    {
+      "question": "Wat is BCG en hoe werkt het bij blaaskanker?",
+      "expected_source": "bcg",
+      "expected_keywords": [
+        "Bacillus Calmette",
+        "afweerreactie",
+        "tuberculose"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "Bacillus Calmette",
+        "afweerreactie",
+        "tuberculose"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.848,
+      "avg_similarity": 0.8318
+    },
+    {
+      "question": "Wat zijn de graden van brandwonden?",
+      "expected_source": "brandwonden",
+      "expected_keywords": [
+        "eerste",
+        "tweede",
+        "derde"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "eerste",
+        "tweede",
+        "derde"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.849,
+      "avg_similarity": 0.8384
+    },
+    {
+      "question": "Wat is een liesbreuk precies?",
+      "expected_source": "liesbreuk",
+      "expected_keywords": [
+        "zwelling",
+        "buikwand",
+        "buikvlies"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "zwelling",
+        "buikwand",
+        "buikvlies"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.812,
+      "avg_similarity": 0.8092
+    },
+    {
+      "question": "Wat is het verschil tussen een kijkoperatie en een open operatie bij een liesbreuk?",
+      "expected_source": "liesbreuk",
+      "expected_keywords": [
+        "matje",
+        "narcose",
+        "kijkoperatie"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "matje",
+        "narcose",
+        "kijkoperatie"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.891,
+      "avg_similarity": 0.8593999999999999
+    },
+    {
+      "question": "Wat is een thoracoscopie?",
+      "expected_source": "thoracoscopische",
+      "expected_keywords": [
+        "kijkbuis",
+        "borstholte",
+        "thoracoscoop"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "kijkbuis",
+        "borstholte",
+        "thoracoscoop"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.836,
+      "avg_similarity": 0.8273999999999999
+    },
+    {
+      "question": "Waardoor ontstaat een beknelde elleboogzenuw?",
+      "expected_source": "elleboogzenuw",
+      "expected_keywords": [
+        "telefoonbotje",
+        "nervus ulnaris",
+        "tintel"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 2,
+      "keywords_found": [
+        "telefoonbotje",
+        "nervus ulnaris",
+        "tintel"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.852,
+      "avg_similarity": 0.8314
+    },
+    {
+      "question": "Wat is een koemelkprovocatietest?",
+      "expected_source": "koemelk",
+      "expected_keywords": [
+        "dubbelblind",
+        "Protifar",
+        "allergie"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "dubbelblind",
+        "Protifar",
+        "allergie"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.844,
+      "avg_similarity": 0.8378
+    },
+    {
+      "question": "Waardoor ontstaat een hangend ooglid?",
+      "expected_source": "ooglid",
+      "expected_keywords": [
+        "levatorspier",
+        "pees",
+        "contactlenzen"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "levatorspier",
+        "pees",
+        "contactlenzen"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.834,
+      "avg_similarity": 0.8251999999999999
+    },
+    {
+      "question": "Wat zijn de bijwerkingen van een BCG spoeling?",
+      "expected_source": "bcg",
+      "expected_keywords": [
+        "blaasontsteking",
+        "koorts",
+        "griep"
+      ],
+      "category": "bijwerkingen",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "blaasontsteking",
+        "koorts",
+        "griep"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.873,
+      "avg_similarity": 0.851
+    },
+    {
+      "question": "Wat zijn de risico's van een elektrische cardioversie?",
+      "expected_source": "cardioversie",
+      "expected_keywords": [
+        "bloedpropje",
+        "huid",
+        "hartritme"
+      ],
+      "category": "bijwerkingen",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "bloedpropje",
+        "huid",
+        "hartritme"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.846,
+      "avg_similarity": 0.8385999999999999
+    },
+    {
+      "question": "Welke complicaties kunnen optreden na een thoracoscopie?",
+      "expected_source": "thoracoscopische",
+      "expected_keywords": [
+        "luchtlekkage",
+        "nabloeding",
+        "trombose"
+      ],
+      "category": "bijwerkingen",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "luchtlekkage",
+        "nabloeding",
+        "trombose"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.851,
+      "avg_similarity": 0.8423999999999999
+    },
+    {
+      "question": "Bij welke behandelingen moet ik nuchter zijn?",
+      "expected_source": null,
+      "expected_keywords": [
+        "6 uur",
+        "nuchter"
+      ],
+      "category": "cross-folder",
+      "source_found": false,
+      "source_rank": null,
+      "keywords_found": [
+        "6 uur",
+        "nuchter"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.848,
+      "avg_similarity": 0.844
+    },
+    {
+      "question": "Mag ik autorijden na een ingreep in het HagaZiekenhuis?",
+      "expected_source": null,
+      "expected_keywords": [
+        "niet",
+        "autorijden"
+      ],
+      "category": "cross-folder",
+      "source_found": false,
+      "source_rank": null,
+      "keywords_found": [
+        "niet",
+        "autorijden"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.872,
+      "avg_similarity": 0.8674
+    },
+    {
+      "question": "Wat is de Virtual Fracture Care app?",
+      "expected_source": "fracture",
+      "expected_keywords": [
+        "botbreuk",
+        "app",
+        "oefeningen"
+      ],
+      "category": "hulpmiddel",
+      "source_found": false,
+      "source_rank": null,
+      "keywords_found": [
+        "oefeningen"
+      ],
+      "keywords_missing": [
+        "botbreuk",
+        "app"
+      ],
+      "keyword_recall": 0.3333333333333333,
+      "top_similarity": 0.815,
+      "avg_similarity": 0.8109999999999999
+    },
+    {
+      "question": "Wat is een BAEP onderzoek?",
+      "expected_source": "baep",
+      "expected_keywords": [
+        "gehoorzenuw",
+        "koptelefoon",
+        "elektroden"
+      ],
+      "category": "medisch",
+      "source_found": true,
+      "source_rank": 1,
+      "keywords_found": [
+        "gehoorzenuw",
+        "koptelefoon",
+        "elektroden"
+      ],
+      "keywords_missing": [],
+      "keyword_recall": 1.0,
+      "top_similarity": 0.854,
+      "avg_similarity": 0.8373999999999999
+    }
+  ]
+}

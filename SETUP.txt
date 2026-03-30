@@ -1,0 +1,11 @@
+cd C:\Users\sebas\OneDrive\RAG\RAG
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process ## VOOR RECHTEN
+.\.venv\Scripts\Activate.ps1
+
+python ingest.py --folder-dir ./folders/ --reset ## CHUNKEN
+
+python server.py ## SERVER
+
+
+KEY : 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
