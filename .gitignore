@@ -1,7 +1,31 @@
-.venv/
-chroma_db/
+# PDFs — niet committen!
+*.pdf
+
+# Python cache
 __pycache__/
-.env
 *.pyc
-enrichment_cache.jsonvenv/
-.venv*/
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ChromaDB (te groot)
+chroma_data/
+chroma/
+*.db
+
+# Environment
+.env
+.venv
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
